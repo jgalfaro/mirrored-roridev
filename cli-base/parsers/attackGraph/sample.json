@@ -1,0 +1,125 @@
+{
+    "monitored_System_Ident": "sys01",
+    "attackGraphType": "differential",
+    "snapshot_Ident": "snap01",
+    "attackPath": [
+		{
+			"attackPathNodes": [
+				{
+					"ingress": {
+						"address": {
+							"address": "192.168.0.1",
+							"netmask": "255.255.255.0",
+							"vlan_num": 2,
+							"ident": "id01",
+							"category": "IPV4",
+							"vlan_name": "vlan1"
+						}, 
+						"interface_Ident": "ing01"
+					},
+					"node_Ident": "nod01",
+					"maxGainedPrivilege": "Root",
+					"responsibleNodes": {
+						"node_Ident": [{"node": "node01","rank" : 100},{"node": "node03","rank" : 100}]
+					},
+					"attackPathNodeVulnerability": [{
+						"exploited_Range": "local",
+						"protocol": {"name": "HTTP","version": "2.1"},
+						"portList": [{"portRange": [{"port": "0","ip_Protocol": "UDP"}]}],
+						"classification": [{"ident": "id01","text": "MyString"}]
+					}],
+					"egress": {
+						"protocol": {"name": "HTTP","version": "2.1"},
+						"address": {
+							"address": "192.168.0.2",
+							"netmask": "255.255.255.0",
+							"vlan_num": 2,
+							"ident": "id02",
+							"category": "IPV4",
+							"vlan_name": "vlan1"
+						},
+						"interface_Ident": "egr01",
+						"portList": [{"portRange": [{"port": "0","ip_Protocol": "UDP"}]}]
+					}
+				},
+				{
+					"ingress": {
+						"address": {
+							"address": "172.16.0.1",
+							"netmask": "255.255.0.0",
+							"vlan_num": 3,
+							"ident": "id03",
+							"category": "IPV6",
+							"vlan_name": "vlan3"
+						}, 
+						"interface_Ident": "ing02"
+					},
+					"node_Ident": "nod02",
+					"maxGainedPrivilege": "User",
+					"responsibleNodes": {
+						"node_Ident": [{"node": "node01","rank" : 100},{"node": "node03","rank" : 100}]
+					},
+					"attackPathNodeVulnerability": [{
+						"exploited_Range": "network",
+						"protocol": {"name": "HTTP","version": "2.1"},
+						"portList": [{"portRange": [{"port": "100","ip_Protocol": "TCP"},{"port": "110","ip_Protocol": "TCP"}]},{"portRange": [{"port": "220","ip_Protocol": "UDP"},{"port": "250","ip_Protocol": "UDP"}]}],
+						"classification": [{"ident": "id01","text": "MyString"}]
+					}],
+					"egress": {
+						"protocol": {"name": "HTTP","version": "2.1"},
+						"address": {
+							"address": "172.16.0.2",
+							"netmask": "255.255.0.0",
+							"vlan_num": 3,
+							"ident": "id04",
+							"category": "IPV6",
+							"vlan_name": "vlan3"
+						},
+						"interface_Ident": "egr02",
+						"portList": [{"portRange": [{"port": "0","ip_Protocol": "TCP"}]}]
+					}
+				},
+				{
+
+					"ingress": {
+						"address": {
+							"address": "10.0.0.1",
+							"netmask": "255.0.0.0",
+							"vlan_num": 4,
+							"ident": "id05",
+							"category": "Unknown",
+							"vlan_name": "vlan4"
+						}, 
+						"interface_Ident": "ing03"
+					},
+					"node_Ident": "nod03",
+					"maxGainedPrivilege": "None",
+					"responsibleNodes": {
+						"node_Ident": [{"node": "node01","rank" : 100},{"node": "node03","rank" : 100}]
+					},
+					"attackPathNodeVulnerability": [{
+						"exploited_Range": "local",
+						"protocol": {"name": "HTTP","version": "2.1"},
+						"portList": [{"portRange": [{"port": "0","ip_Protocol": "ICMP"}]}],
+						"classification": [{"ident": "id01","text": "MyString"}]
+					}],
+					"egress": {
+						"protocol": {"name": "HTTP","version": "2.1"},
+						"address": {
+							"address": "10.0.0.2",
+							"netmask": "255.0.0.0",
+							"vlan_num": 4,
+							"ident": "id05",
+							"category": "Unknown",
+							"vlan_name": "vlan4"
+						},
+						"interface_Ident": "egr03",
+						"portList": [{"portRange": [{"port": "0","ip_Protocol": "ICMP"}]}]
+					}
+				}
+			],
+            "attackPath_Action": "newPath",
+            "attackPath_Ident": "c3b37484-5d1f-41af-b3c6-c1a3a9b072b3"
+		}
+	]
+}

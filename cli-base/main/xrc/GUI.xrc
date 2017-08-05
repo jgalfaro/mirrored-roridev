@@ -1,0 +1,2932 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<resource xmlns="http://www.wxwindows.org/wxxrc" version="2.3.0.1">
+	<object class="wxFrame" name="Main">
+		<style>wxDEFAULT_FRAME_STYLE|wxTAB_TRAVERSAL</style>
+		<size>544,420</size>
+		<title>RFIA</title>
+		<object class="wxGridSizer">
+			<rows>2</rows>
+			<cols>3</cols>
+			<vgap>0</vgap>
+			<hgap>0</hgap>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxALIGN_BOTTOM|wxALIGN_CENTER</flag>
+				<border>5</border>
+				<object class="wxBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
+						<border>5</border>
+						<object class="wxBitmapButton" name="main_bpOrganization">
+							<style>wxBU_AUTODRAW</style>
+							<bitmap>icons/Organization.png</bitmap>
+							<default>0</default>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText1">
+							<label>Organization</label>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxALIGN_BOTTOM|wxALIGN_CENTER</flag>
+				<border>5</border>
+				<object class="wxBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_HORIZONTAL</flag>
+						<border>5</border>
+						<object class="wxBitmapButton" name="main_bpEquipment">
+							<style>wxBU_AUTODRAW</style>
+							<bitmap>icons/Equipment.png</bitmap>
+							<default>0</default>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText2">
+							<label>PEPs</label>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxALIGN_BOTTOM|wxALIGN_CENTER</flag>
+				<border>5</border>
+				<object class="wxBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
+						<border>5</border>
+						<object class="wxBitmapButton" name="main_bpIncidents">
+							<style>wxBU_AUTODRAW</style>
+							<bitmap>icons/Incident.png</bitmap>
+							<default>0</default>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText3">
+							<label>Detrimental Events</label>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxALIGN_RIGHT</flag>
+				<border>5</border>
+				<object class="wxBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
+						<border>5</border>
+						<object class="wxBitmapButton" name="main_bpCountermeasures">
+							<style>wxBU_AUTODRAW</style>
+							<bitmap>icons/Countermeasure.png</bitmap>
+							<default>0</default>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText4">
+							<label>Mitigation Action</label>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxALIGN_RIGHT</flag>
+				<border>5</border>
+				<object class="wxBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
+						<border>5</border>
+						<object class="wxBitmapButton" name="main_bpRORICalculation">
+							<style>wxBU_AUTODRAW</style>
+							<bitmap>icons/Calculation.png</bitmap>
+							<default>0</default>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText5">
+							<label>RORI Calculation</label>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxALIGN_CENTER_HORIZONTAL|wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<object class="wxBitmapButton" name="main_bpGraphRepresentation">
+							<style>wxBU_AUTODRAW</style>
+							<bitmap>icons/GraphicRepresentation.png</bitmap>
+							<default>0</default>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText44">
+							<style>wxALIGN_CENTRE</style>
+							<label>Graphical Representation</label>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxFrame" name="OrganizationFrame">
+		<style>wxDEFAULT_FRAME_STYLE|wxTAB_TRAVERSAL</style>
+		<size>728,462</size>
+		<title>Organization</title>
+		<object class="wxMenuBar" name="organization_menubar">
+			<label>Organization</label>
+			<object class="wxMenu" name="org_menufile">
+				<label>File</label>
+				<object class="wxMenuItem" name="org_exit">
+					<label>Exit</label>
+					<help></help>
+				</object>
+			</object>
+			<object class="wxMenu" name="org_menuoptions">
+				<label>Options</label>
+				<object class="wxMenuItem" name="org_mitcreate">
+					<label>Create</label>
+					<help></help>
+				</object>
+				<object class="wxMenuItem" name="org_mitedit">
+					<label>Edit</label>
+					<help></help>
+				</object>
+				<object class="wxMenuItem" name="org_mitdelete">
+					<label>Delete</label>
+					<help></help>
+				</object>
+			</object>
+		</object>
+		<object class="wxToolBar" name="org_toolbar">
+			<style>wxTB_HORIZONTAL</style>
+			<bitmapsize></bitmapsize>
+			<margins></margins>
+			<packing>1</packing>
+			<separation>5</separation>
+			<object class="tool" name="org_toolcreate">
+				<label>Create</label>
+				<tooltip>Add a new Organization</tooltip>
+				<longhelp>Add a new Organization</longhelp>
+				<bitmap>icons/Add-medium.png</bitmap>
+			</object>
+			<object class="tool" name="org_tooledit">
+				<label>Edit</label>
+				<tooltip>Edit an Organization</tooltip>
+				<longhelp>Edit an Organization</longhelp>
+				<bitmap>icons/Edit-medium.png</bitmap>
+			</object>
+			<object class="tool" name="org_tooldelete">
+				<label>Delete</label>
+				<tooltip>Delete an Organization</tooltip>
+				<longhelp>Delete an Organization</longhelp>
+				<bitmap>icons/Delete-medium.png</bitmap>
+			</object>
+			<object class="separator" />
+			<object class="tool" name="org_toolorg-equ">
+				<label>Organization - PEP</label>
+				<tooltip>Assign PEPs to an Organization</tooltip>
+				<longhelp>Assign PEPs to an Organization</longhelp>
+				<bitmap>icons/Organization-Equipment-medium.png</bitmap>
+			</object>
+			<object class="tool" name="org_toolorg-inc">
+				<label>Organization - Detrimental Event</label>
+				<tooltip>Assign Detrimental Events to an Organization</tooltip>
+				<longhelp>Assign PEPs to an Organization</longhelp>
+				<bitmap>icons/Organization-Incident-medium.png</bitmap>
+			</object>
+		</object>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>2</border>
+				<object class="wxBoxSizer">
+					<orient>wxHORIZONTAL</orient>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALL</flag>
+						<border>2</border>
+						<object class="wxTextCtrl" name="org_txtfilter">
+							<style>wxTE_PROCESS_ENTER</style>
+							<value></value>
+							<maxlength>0</maxlength>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>2</border>
+						<object class="wxButton" name="org_btnfilter">
+							<label>Filter</label>
+							<default>0</default>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND | wxALL</flag>
+				<border>5</border>
+				<object class="wxPanel" name="org_panellist">
+					<style>wxTAB_TRAVERSAL</style>
+					<object class="wxBoxSizer">
+						<orient>wxVERTICAL</orient>
+						<object class="sizeritem">
+							<option>1</option>
+							<flag>wxALL|wxEXPAND</flag>
+							<border>5</border>
+							<object class="wxListCtrl" name="organizationList">
+								<style>wxLC_ICON</style>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxDialog" name="orgEditor">
+		<style>wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER|wxSTAY_ON_TOP</style>
+		<size>340,260</size>
+		<title>Organization Editor</title>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxFlexGridSizer">
+					<rows>2</rows>
+					<cols>2</cols>
+					<vgap>0</vgap>
+					<hgap>0</hgap>
+					<growablecols>1</growablecols>
+					<growablerows>1</growablerows>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText8">
+							<label>Name *</label>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALIGN_CENTER|wxALL|wxEXPAND</flag>
+						<border>3</border>
+						<object class="wxTextCtrl" name="org_textname">
+							<value></value>
+							<maxlength>45</maxlength>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText9">
+							<label>Description</label>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALIGN_CENTER|wxALL|wxEXPAND</flag>
+						<border>3</border>
+						<object class="wxTextCtrl" name="org_textdescription">
+							<style>wxTE_MULTILINE</style>
+							<value></value>
+							<maxlength>0</maxlength>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALIGN_CENTER</flag>
+				<border>3</border>
+				<object class="wxBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="org_txtmsg">
+							<style>wxALIGN_CENTRE</style>
+							<label>* Mandatory Fields\n</label>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>2</border>
+				<object class="wxBoxSizer">
+					<orient>wxHORIZONTAL</orient>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALIGN_CENTER|wxALL|wxSHAPED</flag>
+						<border>5</border>
+						<object class="wxButton" name="org_btnedit">
+							<label>OK</label>
+							<default>0</default>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALIGN_CENTER|wxALL|wxSHAPED</flag>
+						<border>5</border>
+						<object class="wxButton" name="org_btncancel">
+							<label>Cancel</label>
+							<default>0</default>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxFrame" name="EquipmentFrame">
+		<style>wxDEFAULT_FRAME_STYLE|wxTAB_TRAVERSAL</style>
+		<size>728,462</size>
+		<title>PEP</title>
+		<object class="wxMenuBar" name="equipment_menubar">
+			<label>PEP</label>
+			<object class="wxMenu" name="equipment_menufile">
+				<label>File</label>
+				<object class="wxMenuItem" name="equipment_exit">
+					<label>Exit</label>
+					<help></help>
+				</object>
+			</object>
+			<object class="wxMenu" name="equipment_menuoptions">
+				<label>Options</label>
+				<object class="wxMenuItem" name="equipment_mitcreate">
+					<label>Create</label>
+					<help></help>
+				</object>
+				<object class="wxMenuItem" name="equipment_mitedit">
+					<label>Edit</label>
+					<help></help>
+				</object>
+				<object class="wxMenuItem" name="equipment_mitdelete">
+					<label>Delete</label>
+					<help></help>
+				</object>
+			</object>
+		</object>
+		<object class="wxToolBar" name="equipment_toolbar">
+			<style>wxTB_HORIZONTAL</style>
+			<bitmapsize></bitmapsize>
+			<margins></margins>
+			<packing>1</packing>
+			<separation>5</separation>
+			<object class="tool" name="equipment_toolcreate">
+				<label>Create</label>
+				<tooltip>Add a new PEP</tooltip>
+				<longhelp>Add a new PEP</longhelp>
+				<bitmap>icons/Add-medium.png</bitmap>
+			</object>
+			<object class="tool" name="equipment_tooledit">
+				<label>Edit</label>
+				<tooltip>Edit a PEP</tooltip>
+				<longhelp>Edit a PEP</longhelp>
+				<bitmap>icons/Edit-medium.png</bitmap>
+			</object>
+			<object class="tool" name="equipment_tooldelete">
+				<label>Delete</label>
+				<tooltip>Delete a PEP</tooltip>
+				<longhelp>Delete a PEP</longhelp>
+				<bitmap>icons/Delete-medium.png</bitmap>
+			</object>
+			<object class="separator" />
+			<object class="tool" name="equipment_toolequ-cou">
+				<label>PEP - Mitigation Action</label>
+				<tooltip>Assign Mitigation Actions to a PEP</tooltip>
+				<longhelp>Assign Mitigation Actions to a PEP</longhelp>
+				<bitmap>icons/Equipment-Countermeasure-medium.png</bitmap>
+			</object>
+		</object>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxBoxSizer">
+					<orient>wxHORIZONTAL</orient>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALL</flag>
+						<border>2</border>
+						<object class="wxTextCtrl" name="equ_txtfilter">
+							<style>wxTE_PROCESS_ENTER</style>
+							<value></value>
+							<maxlength>0</maxlength>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>2</border>
+						<object class="wxButton" name="equ_btnfilter">
+							<label>Filter</label>
+							<default>0</default>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND | wxALL</flag>
+				<border>5</border>
+				<object class="wxPanel" name="equipment_panellist">
+					<style>wxTAB_TRAVERSAL</style>
+					<object class="wxBoxSizer">
+						<orient>wxVERTICAL</orient>
+						<object class="sizeritem">
+							<option>1</option>
+							<flag>wxALL|wxEXPAND</flag>
+							<border>5</border>
+							<object class="wxListCtrl" name="equipmentList">
+								<style>wxLC_ICON</style>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxDialog" name="equipmentEditor">
+		<style>wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER|wxSTAY_ON_TOP</style>
+		<size>300,200</size>
+		<title>PEP Editor</title>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxFlexGridSizer">
+					<rows>3</rows>
+					<cols>2</cols>
+					<vgap>0</vgap>
+					<hgap>0</hgap>
+					<growablecols>1</growablecols>
+					<growablerows>4</growablerows>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALIGN_LEFT|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText46">
+							<label>ID *</label>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALIGN_CENTER|wxALL|wxEXPAND</flag>
+						<border>3</border>
+						<object class="wxTextCtrl" name="equipment_textIDRef">
+							<value></value>
+							<maxlength>0</maxlength>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALIGN_LEFT|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText8">
+							<label>Name *</label>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALIGN_CENTER|wxALL|wxEXPAND</flag>
+						<border>3</border>
+						<object class="wxTextCtrl" name="equipment_textname">
+							<value></value>
+							<maxlength>45</maxlength>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALIGN_LEFT|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText9">
+							<label>Type *</label>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALIGN_CENTER|wxALL|wxEXPAND</flag>
+						<border>3</border>
+						<object class="wxTextCtrl" name="equipment_texttype">
+							<value></value>
+							<maxlength>45</maxlength>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALIGN_CENTER</flag>
+				<border>3</border>
+				<object class="wxBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="equipment_txtmsg">
+							<style>wxALIGN_CENTRE</style>
+							<label>* Mandatory Fields\n</label>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>2</border>
+				<object class="wxBoxSizer">
+					<orient>wxHORIZONTAL</orient>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALIGN_CENTER|wxALL|wxSHAPED</flag>
+						<border>5</border>
+						<object class="wxButton" name="equipment_btnedit">
+							<label>OK</label>
+							<default>0</default>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALIGN_CENTER|wxALL|wxSHAPED</flag>
+						<border>5</border>
+						<object class="wxButton" name="equipment_btncancel">
+							<label>Cancel</label>
+							<default>0</default>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxDialog" name="equCouEditor">
+		<style>wxDEFAULT_DIALOG_STYLE</style>
+		<size>590,600</size>
+		<title>Associate Mitigation Actions to PEP</title>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxToolBar" name="m_toolBar8">
+					<style>wxTB_HORIZONTAL</style>
+					<bitmapsize></bitmapsize>
+					<margins></margins>
+					<packing>1</packing>
+					<separation>5</separation>
+					<object class="tool" name="equCou_tooldelete">
+						<label>Delete Restriction</label>
+						<tooltip>Remove Mitigation Action associated to PEP</tooltip>
+						<longhelp>Remove Mitigation Action associated to PEP</longhelp>
+						<bitmap>icons/Delete-small.png</bitmap>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxStaticBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<label>List of Mitigation Actions</label>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxEXPAND</flag>
+						<border>5</border>
+						<object class="wxBoxSizer">
+							<orient>wxVERTICAL</orient>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxEXPAND</flag>
+								<border>5</border>
+								<object class="wxBoxSizer">
+									<orient>wxHORIZONTAL</orient>
+									<object class="sizeritem">
+										<option>1</option>
+										<flag>wxALL</flag>
+										<border>2</border>
+										<object class="wxTextCtrl" name="equCou_txtfilter1">
+											<style>wxTE_PROCESS_ENTER</style>
+											<value></value>
+											<maxlength>0</maxlength>
+										</object>
+									</object>
+									<object class="sizeritem">
+										<option>0</option>
+										<flag>wxALL</flag>
+										<border>2</border>
+										<object class="wxButton" name="equCou_btnfilter1">
+											<label>Filter</label>
+											<default>0</default>
+										</object>
+									</object>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>5</border>
+								<object class="wxListCtrl" name="equCou_listcoun">
+									<style>wxLC_ICON</style>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxStaticBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<label>Mitigation Actions associated to the PEP</label>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxEXPAND</flag>
+						<border>5</border>
+						<object class="wxBoxSizer">
+							<orient>wxVERTICAL</orient>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxEXPAND</flag>
+								<border>5</border>
+								<object class="wxBoxSizer">
+									<orient>wxHORIZONTAL</orient>
+									<object class="sizeritem">
+										<option>1</option>
+										<flag>wxALL</flag>
+										<border>2</border>
+										<object class="wxTextCtrl" name="equCou_txtfilter2">
+											<style>wxTE_PROCESS_ENTER</style>
+											<value></value>
+											<maxlength>0</maxlength>
+										</object>
+									</object>
+									<object class="sizeritem">
+										<option>0</option>
+										<flag>wxALL</flag>
+										<border>2</border>
+										<object class="wxButton" name="equCou_btnfilter2">
+											<label>Filter</label>
+											<default>0</default>
+										</object>
+									</object>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>5</border>
+								<object class="wxListCtrl" name="equCou_listequCou">
+									<style>wxLC_ICON</style>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxGridSizer">
+					<rows>1</rows>
+					<cols>2</cols>
+					<vgap>0</vgap>
+					<hgap>0</hgap>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER|wxALL</flag>
+						<border>5</border>
+						<object class="wxButton" name="equCou_btnok">
+							<label>Assign</label>
+							<default>0</default>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER|wxALIGN_LEFT|wxALL</flag>
+						<border>5</border>
+						<object class="wxButton" name="equCou_btncancel">
+							<label>Cancel</label>
+							<default>0</default>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxFrame" name="IncidentFrame">
+		<style>wxDEFAULT_FRAME_STYLE|wxTAB_TRAVERSAL</style>
+		<size>728,462</size>
+		<title>Detrimental Event</title>
+		<object class="wxMenuBar" name="incident_menubar">
+			<label>Detrimental Event</label>
+			<object class="wxMenu" name="incident_menufile">
+				<label>File</label>
+				<object class="wxMenuItem" name="incident_exit">
+					<label>Exit</label>
+					<help></help>
+				</object>
+			</object>
+			<object class="wxMenu" name="incident_menuoptions">
+				<label>Options</label>
+				<object class="wxMenuItem" name="incident_mitcreate">
+					<label>Create</label>
+					<help></help>
+				</object>
+				<object class="wxMenuItem" name="incident_mitedit">
+					<label>Edit</label>
+					<help></help>
+				</object>
+				<object class="wxMenuItem" name="incident_mitdelete">
+					<label>Delete</label>
+					<help></help>
+				</object>
+			</object>
+		</object>
+		<object class="wxToolBar" name="incident_toolbar">
+			<style>wxTB_HORIZONTAL</style>
+			<bitmapsize></bitmapsize>
+			<margins></margins>
+			<packing>1</packing>
+			<separation>5</separation>
+			<object class="tool" name="incident_toolcreate">
+				<label>Create</label>
+				<tooltip>Add a new Detrimental Event</tooltip>
+				<longhelp>Add a new Detrimental Event</longhelp>
+				<bitmap>icons/Add-medium.png</bitmap>
+			</object>
+			<object class="tool" name="incident_tooledit">
+				<label>Edit</label>
+				<tooltip>Edit a Detrimental Event</tooltip>
+				<longhelp>Edit a Detrimental Event</longhelp>
+				<bitmap>icons/Edit-medium.png</bitmap>
+			</object>
+			<object class="tool" name="incident_tooldelete">
+				<label>Delete</label>
+				<tooltip>Delete a Detrimental Event</tooltip>
+				<longhelp>Delete a Detrimental Event</longhelp>
+				<bitmap>icons/Delete-medium.png</bitmap>
+			</object>
+			<object class="separator" />
+			<object class="tool" name="incident_toolinc-cou">
+				<label>Detrimental Event - Mitigation Action</label>
+				<tooltip></tooltip>
+				<longhelp></longhelp>
+				<bitmap>icons/Incident-Countermeasure-medium.png</bitmap>
+			</object>
+		</object>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxBoxSizer">
+					<orient>wxHORIZONTAL</orient>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALL</flag>
+						<border>2</border>
+						<object class="wxTextCtrl" name="inc_txtfilter">
+							<style>wxTE_PROCESS_ENTER</style>
+							<value></value>
+							<maxlength>0</maxlength>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>2</border>
+						<object class="wxButton" name="inc_btnfilter">
+							<label>Filter</label>
+							<default>0</default>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND | wxALL</flag>
+				<border>5</border>
+				<object class="wxPanel" name="incident_panellist">
+					<style>wxTAB_TRAVERSAL</style>
+					<object class="wxBoxSizer">
+						<orient>wxVERTICAL</orient>
+						<object class="sizeritem">
+							<option>1</option>
+							<flag>wxALL|wxEXPAND</flag>
+							<border>5</border>
+							<object class="wxListCtrl" name="incidentList">
+								<style>wxLC_ICON</style>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxDialog" name="incidentEditor">
+		<style>wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER|wxSTAY_ON_TOP</style>
+		<size>340,250</size>
+		<title>Detrimental Event Editor</title>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxFlexGridSizer">
+					<rows>4</rows>
+					<cols>2</cols>
+					<vgap>2</vgap>
+					<hgap>2</hgap>
+					<growablecols>1</growablecols>
+					<growablerows>2</growablerows>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText48">
+							<label>ID *</label>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER|wxALL|wxEXPAND</flag>
+						<border>3</border>
+						<object class="wxTextCtrl" name="incident_textIDRef">
+							<value></value>
+							<maxlength>0</maxlength>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText8">
+							<label>Name *</label>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALIGN_CENTER|wxALL|wxEXPAND</flag>
+						<border>2</border>
+						<object class="wxTextCtrl" name="incident_textname">
+							<value></value>
+							<maxlength>45</maxlength>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText9">
+							<label>Description</label>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALIGN_CENTER|wxALL|wxEXPAND</flag>
+						<border>2</border>
+						<object class="wxTextCtrl" name="incident_textdescription">
+							<style>wxTE_MULTILINE</style>
+							<value></value>
+							<maxlength>0</maxlength>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText22">
+							<label>Risk Level *</label>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER|wxALL|wxEXPAND</flag>
+						<border>2</border>
+						<object class="wxChoice" name="incident_risklevel">
+							<selection>0</selection>
+							<content>
+								<item>Low</item>
+								<item>Medium</item>
+								<item>High</item>
+							</content>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALIGN_CENTER</flag>
+				<border>3</border>
+				<object class="wxBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="incident_txtmsg">
+							<style>wxALIGN_CENTRE</style>
+							<label>* Mandatory Fields\n</label>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>2</border>
+				<object class="wxBoxSizer">
+					<orient>wxHORIZONTAL</orient>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALIGN_CENTER|wxALL|wxSHAPED</flag>
+						<border>5</border>
+						<object class="wxButton" name="incident_btnedit">
+							<label>OK</label>
+							<default>0</default>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALIGN_CENTER|wxALL|wxSHAPED</flag>
+						<border>5</border>
+						<object class="wxButton" name="incident_btncancel">
+							<label>Cancel</label>
+							<default>0</default>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxDialog" name="incCouEditor">
+		<style>wxDEFAULT_DIALOG_STYLE</style>
+		<size>590,600</size>
+		<title>Associate Mitigation Actions to Detrimental Events</title>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxToolBar" name="m_toolBar8">
+					<style>wxTB_HORIZONTAL</style>
+					<bitmapsize></bitmapsize>
+					<margins></margins>
+					<packing>1</packing>
+					<separation>5</separation>
+					<object class="tool" name="incCou_tooldelete">
+						<label>Delete Restriction</label>
+						<tooltip>Remove Mitigation Action associated to Detrimental Event</tooltip>
+						<longhelp>Remove Mitigation Action associated to Detrimental Event</longhelp>
+						<bitmap>icons/Delete-small.png</bitmap>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxStaticBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<label>List of Mitigation Actions</label>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxEXPAND</flag>
+						<border>5</border>
+						<object class="wxBoxSizer">
+							<orient>wxVERTICAL</orient>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxEXPAND</flag>
+								<border>2</border>
+								<object class="wxBoxSizer">
+									<orient>wxHORIZONTAL</orient>
+									<object class="sizeritem">
+										<option>1</option>
+										<flag>wxALL</flag>
+										<border>2</border>
+										<object class="wxTextCtrl" name="incCou_txtfilter1">
+											<style>wxTE_PROCESS_ENTER</style>
+											<value></value>
+											<maxlength>0</maxlength>
+										</object>
+									</object>
+									<object class="sizeritem">
+										<option>0</option>
+										<flag>wxALL</flag>
+										<border>2</border>
+										<object class="wxButton" name="incCou_btnfilter1">
+											<label>Filter</label>
+											<default>0</default>
+										</object>
+									</object>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>5</border>
+								<object class="wxListCtrl" name="incCou_listcoun">
+									<style>wxLC_ICON</style>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxStaticBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<label>Mitigation Actions associated to the Detrimental Event</label>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxEXPAND</flag>
+						<border>5</border>
+						<object class="wxBoxSizer">
+							<orient>wxVERTICAL</orient>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxEXPAND</flag>
+								<border>5</border>
+								<object class="wxBoxSizer">
+									<orient>wxHORIZONTAL</orient>
+									<object class="sizeritem">
+										<option>1</option>
+										<flag>wxALL</flag>
+										<border>2</border>
+										<object class="wxTextCtrl" name="incCou_txtfilter2">
+											<style>wxTE_PROCESS_ENTER</style>
+											<value></value>
+											<maxlength>0</maxlength>
+										</object>
+									</object>
+									<object class="sizeritem">
+										<option>0</option>
+										<flag>wxALL</flag>
+										<border>2</border>
+										<object class="wxButton" name="incCou_btnfilter2">
+											<label>Filter</label>
+											<default>0</default>
+										</object>
+									</object>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>5</border>
+								<object class="wxListCtrl" name="incCou_listincCou">
+									<style>wxLC_ICON</style>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxGridSizer">
+					<rows>1</rows>
+					<cols>2</cols>
+					<vgap>0</vgap>
+					<hgap>0</hgap>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER|wxALL</flag>
+						<border>5</border>
+						<object class="wxButton" name="incCou_btnok">
+							<label>Assign</label>
+							<default>0</default>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER|wxALIGN_LEFT|wxALL</flag>
+						<border>5</border>
+						<object class="wxButton" name="incCou_btncancel">
+							<label>Cancel</label>
+							<default>0</default>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxFrame" name="CountermeasureFrame">
+		<style>wxDEFAULT_FRAME_STYLE|wxTAB_TRAVERSAL</style>
+		<size>728,462</size>
+		<title>Mitigation Action</title>
+		<object class="wxMenuBar" name="countermeasure_menubar">
+			<label>Mitigation Action</label>
+			<object class="wxMenu" name="countermeasure_menufile">
+				<label>File</label>
+				<object class="wxMenuItem" name="countermeasure_exit">
+					<label>Exit</label>
+					<help></help>
+				</object>
+			</object>
+			<object class="wxMenu" name="countermeasure_menuoptions">
+				<label>Options</label>
+				<object class="wxMenuItem" name="countermeasure_mitcreate">
+					<label>Create</label>
+					<help></help>
+				</object>
+				<object class="wxMenuItem" name="countermeasure_mitedit">
+					<label>Edit</label>
+					<help></help>
+				</object>
+				<object class="wxMenuItem" name="countermeasure_mitdelete">
+					<label>Delete</label>
+					<help></help>
+				</object>
+			</object>
+		</object>
+		<object class="wxToolBar" name="countermeasure_toolbar">
+			<style>wxTB_HORIZONTAL</style>
+			<bitmapsize></bitmapsize>
+			<margins></margins>
+			<packing>1</packing>
+			<separation>5</separation>
+			<object class="tool" name="countermeasure_toolcreate">
+				<label>Create</label>
+				<tooltip>Add a new Mitigation Action</tooltip>
+				<longhelp>Add a new Mitigation Action</longhelp>
+				<bitmap>icons/Add-medium.png</bitmap>
+			</object>
+			<object class="tool" name="countermeasure_tooledit">
+				<label>Edit</label>
+				<tooltip>Edit a Mitigation Action</tooltip>
+				<longhelp>Edit a Mitigation Action</longhelp>
+				<bitmap>icons/Edit-medium.png</bitmap>
+			</object>
+			<object class="tool" name="countermeasure_tooldelete">
+				<label>Delete</label>
+				<tooltip>Delete a Mitigation Action</tooltip>
+				<longhelp>Delete a Mitigation Action</longhelp>
+				<bitmap>icons/Delete-medium.png</bitmap>
+			</object>
+			<object class="separator" />
+			<object class="tool" name="countermeasure_toolcou-rm">
+				<label>Mitigation Action - RM</label>
+				<tooltip>Assign the Risk Mitigation Values to a Mitigation Action</tooltip>
+				<longhelp>Assign the Risk Mitigation values to a Mitigation Action</longhelp>
+				<bitmap>icons/colorful_chart-medium.png</bitmap>
+			</object>
+			<object class="tool" name="countermeasure_toolcou-arc">
+				<label>Mitigation Action - ARC</label>
+				<tooltip>Assign the Annual Response Cost to a Mitigation Action</tooltip>
+				<longhelp>Assigna the Annual Response Cost to a Mitigation Action</longhelp>
+				<bitmap>icons/cost-medium.png</bitmap>
+			</object>
+			<object class="tool" name="countermeasure_toolcou-res">
+				<label>Mitigation Action - Restrictions</label>
+				<tooltip>Assign Restrictions to the Mitigation Action</tooltip>
+				<longhelp>Assign Restrictions to the Mitigation Action</longhelp>
+				<bitmap>icons/restriction-medium.png</bitmap>
+			</object>
+		</object>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxBoxSizer">
+					<orient>wxHORIZONTAL</orient>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALL</flag>
+						<border>2</border>
+						<object class="wxTextCtrl" name="cou_txtfilter">
+							<style>wxTE_PROCESS_ENTER</style>
+							<value></value>
+							<maxlength>0</maxlength>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>2</border>
+						<object class="wxButton" name="cou_btnfilter">
+							<label>Filter</label>
+							<default>0</default>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND | wxALL</flag>
+				<border>5</border>
+				<object class="wxPanel" name="countermeasure_panellist">
+					<style>wxTAB_TRAVERSAL</style>
+					<object class="wxBoxSizer">
+						<orient>wxVERTICAL</orient>
+						<object class="sizeritem">
+							<option>1</option>
+							<flag>wxALL|wxEXPAND</flag>
+							<border>5</border>
+							<object class="wxListCtrl" name="countermeasureList">
+								<style>wxLC_ICON</style>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxDialog" name="countermeasureEditor">
+		<style>wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER|wxSTAY_ON_TOP</style>
+		<size>340,250</size>
+		<title>Mitigation Action Editor</title>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxFlexGridSizer">
+					<rows>4</rows>
+					<cols>2</cols>
+					<vgap>2</vgap>
+					<hgap>2</hgap>
+					<growablecols>1</growablecols>
+					<growablerows>2</growablerows>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText48">
+							<label>ID *</label>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>3</border>
+						<object class="wxTextCtrl" name="countermeasure_textIDRef">
+							<value></value>
+							<maxlength>0</maxlength>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText8">
+							<label>Name *</label>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALIGN_CENTER|wxALL|wxEXPAND</flag>
+						<border>2</border>
+						<object class="wxTextCtrl" name="countermeasure_textname">
+							<value></value>
+							<maxlength>45</maxlength>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText9">
+							<label>Description</label>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALIGN_CENTER|wxALL|wxEXPAND</flag>
+						<border>2</border>
+						<object class="wxTextCtrl" name="countermeasure_textdescription">
+							<style>wxTE_MULTILINE</style>
+							<value></value>
+							<maxlength>0</maxlength>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText22">
+							<label>Totally Restrictive</label>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL</flag>
+						<border>5</border>
+						<object class="wxCheckBox" name="countermeasure_checkTotal">
+							<label>Yes</label>
+							<checked>0</checked>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALIGN_CENTER</flag>
+				<border>3</border>
+				<object class="wxBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER</flag>
+						<border>1</border>
+						<object class="wxStaticText" name="countermeasure_txtmsg">
+							<style>wxALIGN_CENTRE</style>
+							<label>* Mandatory Fields\n</label>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>2</border>
+				<object class="wxBoxSizer">
+					<orient>wxHORIZONTAL</orient>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALIGN_CENTER|wxALL|wxSHAPED</flag>
+						<border>5</border>
+						<object class="wxButton" name="countermeasure_btnedit">
+							<label>OK</label>
+							<default>0</default>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALIGN_CENTER|wxALL|wxSHAPED</flag>
+						<border>5</border>
+						<object class="wxButton" name="countermeasure_btncancel">
+							<label>Cancel</label>
+							<default>0</default>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxDialog" name="restrictionEditor">
+		<style>wxDEFAULT_DIALOG_STYLE</style>
+		<size>590,600</size>
+		<title>Assign Restriction to Mitigation Action</title>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxToolBar" name="m_toolBar8">
+					<style>wxTB_HORIZONTAL</style>
+					<bitmapsize></bitmapsize>
+					<margins></margins>
+					<packing>1</packing>
+					<separation>5</separation>
+					<object class="tool" name="restriction_tooldelete">
+						<label>Delete Restriction</label>
+						<tooltip>Delete Mitigation Action&apos;s Restriction</tooltip>
+						<longhelp>Delete Mitigation Action&apos;s Restriction</longhelp>
+						<bitmap>icons/Delete-small.png</bitmap>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxStaticBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<label>List of Mitigation Actions</label>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxEXPAND</flag>
+						<border>5</border>
+						<object class="wxBoxSizer">
+							<orient>wxVERTICAL</orient>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxEXPAND</flag>
+								<border>5</border>
+								<object class="wxBoxSizer">
+									<orient>wxHORIZONTAL</orient>
+									<object class="sizeritem">
+										<option>1</option>
+										<flag>wxALL</flag>
+										<border>2</border>
+										<object class="wxTextCtrl" name="restriction_txtfilter1">
+											<style>wxTE_PROCESS_ENTER</style>
+											<value></value>
+											<maxlength>0</maxlength>
+										</object>
+									</object>
+									<object class="sizeritem">
+										<option>0</option>
+										<flag>wxALL</flag>
+										<border>2</border>
+										<object class="wxButton" name="restriction_btnfilter1">
+											<label>Filter</label>
+											<default>0</default>
+										</object>
+									</object>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>5</border>
+								<object class="wxListCtrl" name="restriction_listcoun">
+									<style>wxLC_ICON</style>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxStaticBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<label>Restriction of Mitigation Action</label>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxEXPAND</flag>
+						<border>5</border>
+						<object class="wxBoxSizer">
+							<orient>wxVERTICAL</orient>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxEXPAND</flag>
+								<border>5</border>
+								<object class="wxBoxSizer">
+									<orient>wxHORIZONTAL</orient>
+									<object class="sizeritem">
+										<option>1</option>
+										<flag>wxALL</flag>
+										<border>2</border>
+										<object class="wxTextCtrl" name="restriction_txtfilter2">
+											<style>wxTE_PROCESS_ENTER</style>
+											<value></value>
+											<maxlength>0</maxlength>
+										</object>
+									</object>
+									<object class="sizeritem">
+										<option>0</option>
+										<flag>wxALL</flag>
+										<border>2</border>
+										<object class="wxButton" name="restriction_btnfilter2">
+											<label>Filter</label>
+											<default>0</default>
+										</object>
+									</object>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>5</border>
+								<object class="wxListCtrl" name="restriction_listrest">
+									<style>wxLC_ICON</style>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxGridSizer">
+					<rows>1</rows>
+					<cols>2</cols>
+					<vgap>0</vgap>
+					<hgap>0</hgap>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER|wxALL</flag>
+						<border>5</border>
+						<object class="wxButton" name="restriction_btnok">
+							<label>Assign</label>
+							<default>0</default>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER|wxALIGN_LEFT|wxALL</flag>
+						<border>5</border>
+						<object class="wxButton" name="restriction_btncancel">
+							<label>Cancel</label>
+							<default>0</default>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxDialog" name="ARCEditor">
+		<style>wxDEFAULT_DIALOG_STYLE</style>
+		<size>330,330</size>
+		<title>Annual Response Cost Editor</title>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxToolBar" name="m_toolBar7">
+					<style>wxTB_HORIZONTAL</style>
+					<bitmapsize></bitmapsize>
+					<margins></margins>
+					<packing>1</packing>
+					<separation>5</separation>
+					<object class="tool" name="arc_tooldelete">
+						<label>Delete Annual Response Cost</label>
+						<tooltip>Delete Annual Response Cost values of current Mitigation Action</tooltip>
+						<longhelp>Delete Annual Response Cost values of current Mitigation Action</longhelp>
+						<bitmap>icons/Delete-small.png</bitmap>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND | wxALL</flag>
+				<border>5</border>
+				<object class="wxPanel" name="m_panel7">
+					<style>wxTAB_TRAVERSAL</style>
+					<object class="wxFlexGridSizer">
+						<rows>2</rows>
+						<cols>2</cols>
+						<vgap>0</vgap>
+						<hgap>0</hgap>
+						<growablecols></growablecols>
+						<growablerows></growablerows>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxALL</flag>
+							<border>5</border>
+							<object class="wxStaticText" name="m_staticText33">
+								<label>Cost of implementation (CoI)</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxALL</flag>
+							<border>5</border>
+							<object class="wxTextCtrl" name="arc_textcoi">
+								<tooltip>Cost of implementation (CoI), expressed in currency per year (e.g. $/year), refers the cost of deployment, installation and/or implementation of security measures to mitigate a given attack.\n</tooltip>
+								<value></value>
+								<maxlength>0</maxlength>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxALL</flag>
+							<border>5</border>
+							<object class="wxStaticText" name="m_staticText34">
+								<label>Cost of maintenance (CoM)</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxALL</flag>
+							<border>5</border>
+							<object class="wxTextCtrl" name="arc_textcom">
+								<tooltip>Cost of maintenance (CoM), expressed in currency per year (e.g. $/year), includes the cost of regular services (e.g. electricity, consulting, analysis, testing, etc.) that are needed for normal operations of the implemented Mitigation Actions.\n</tooltip>
+								<value></value>
+								<maxlength>0</maxlength>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxALL</flag>
+							<border>5</border>
+							<object class="wxStaticText" name="m_staticText35">
+								<label>Other direct costs (Odc)</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxALL</flag>
+							<border>5</border>
+							<object class="wxTextCtrl" name="arc_textodc">
+								<tooltip>Other direct costs (Odc), expressed in currency per year (e.g. $/year), refers to all other direct costs (e.g. suppliers and partners) that are needed to put in place Mitigation Actions.</tooltip>
+								<value></value>
+								<maxlength>0</maxlength>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxALL</flag>
+							<border>5</border>
+							<object class="wxStaticText" name="m_staticText36">
+								<label>Indirect costs (Ic)</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<option>0</option>
+							<flag>wxALL</flag>
+							<border>5</border>
+							<object class="wxTextCtrl" name="arc_textic">
+								<tooltip>Indirect costs (Ic), expressed in currency per year (e.g. $/year), include all other costs, such as consequences that may originate the adoption of a particular Mitigation Action to legitimate users.\n</tooltip>
+								<value></value>
+								<maxlength>0</maxlength>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>2</border>
+				<object class="wxStaticBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<label>Give the total value</label>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxEXPAND</flag>
+						<border>5</border>
+						<object class="wxFlexGridSizer">
+							<rows>1</rows>
+							<cols>3</cols>
+							<vgap>0</vgap>
+							<hgap>0</hgap>
+							<growablecols></growablecols>
+							<growablerows></growablerows>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALL</flag>
+								<border>5</border>
+								<object class="wxCheckBox" name="arc_checktotal">
+									<label>OK</label>
+									<checked>0</checked>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALIGN_BOTTOM|wxALIGN_CENTER|wxALL</flag>
+								<border>10</border>
+								<object class="wxStaticText" name="m_staticText18">
+									<label>Total</label>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>5</border>
+								<object class="wxTextCtrl" name="arc_texttotal">
+									<enabled>0</enabled>
+									<tooltip>Total value of the AIV. These field is provided in case the admin does not have a knowledge of the single value of the costs (SC, PC, RV, OC) but instead it knows the total value of the AIV for the given PEP. If the value is provided the previous fields are not taken into account.</tooltip>
+									<value></value>
+									<maxlength>0</maxlength>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxGridSizer">
+					<rows>2</rows>
+					<cols>2</cols>
+					<vgap>0</vgap>
+					<hgap>0</hgap>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER|wxALL</flag>
+						<border>5</border>
+						<object class="wxButton" name="arc_btnok">
+							<label>OK</label>
+							<default>0</default>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER|wxALL</flag>
+						<border>5</border>
+						<object class="wxButton" name="arc_btncancel">
+							<label>Cancel</label>
+							<default>0</default>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxDialog" name="AEVEditor">
+		<style>wxDEFAULT_DIALOG_STYLE|wxMAXIMIZE_BOX|wxRESIZE_BORDER</style>
+		<size>620,600</size>
+		<title>Assign PEPs to an Organization</title>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxToolBar" name="m_toolBar4">
+					<style>wxTB_HORIZONTAL</style>
+					<bitmapsize></bitmapsize>
+					<margins></margins>
+					<packing>1</packing>
+					<separation>5</separation>
+					<object class="tool" name="aev_tooledit">
+						<label>tool</label>
+						<tooltip>Edit the AIV of an PEP</tooltip>
+						<longhelp></longhelp>
+						<bitmap>icons/Edit-medium.png</bitmap>
+					</object>
+					<object class="tool" name="aev_tooldelete">
+						<label>tool</label>
+						<tooltip>Remove the PEP from the Organization</tooltip>
+						<longhelp></longhelp>
+						<bitmap>icons/Delete-medium.png</bitmap>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND | wxALL</flag>
+				<border>5</border>
+				<object class="wxPanel" name="m_panel4">
+					<style>wxTAB_TRAVERSAL</style>
+					<object class="wxGridSizer">
+						<rows>2</rows>
+						<cols>2</cols>
+						<vgap>0</vgap>
+						<hgap>0</hgap>
+						<object class="sizeritem">
+							<option>1</option>
+							<flag>wxEXPAND</flag>
+							<border>5</border>
+							<object class="wxBoxSizer">
+								<orient>wxVERTICAL</orient>
+								<object class="sizeritem">
+									<option>1</option>
+									<flag>wxEXPAND</flag>
+									<border>5</border>
+									<object class="wxStaticBoxSizer">
+										<orient>wxVERTICAL</orient>
+										<label>PEPs</label>
+										<object class="sizeritem">
+											<option>1</option>
+											<flag>wxEXPAND</flag>
+											<border>5</border>
+											<object class="wxBoxSizer">
+												<orient>wxVERTICAL</orient>
+												<object class="sizeritem">
+													<option>0</option>
+													<flag>wxEXPAND</flag>
+													<border>5</border>
+													<object class="wxBoxSizer">
+														<orient>wxHORIZONTAL</orient>
+														<object class="sizeritem">
+															<option>1</option>
+															<flag>wxALL</flag>
+															<border>2</border>
+															<object class="wxTextCtrl" name="AEV_txtfilter1">
+																<style>wxTE_PROCESS_ENTER</style>
+																<value></value>
+																<maxlength>0</maxlength>
+															</object>
+														</object>
+														<object class="sizeritem">
+															<option>0</option>
+															<flag>wxALL</flag>
+															<border>2</border>
+															<object class="wxButton" name="AEV_btnfilter1">
+																<label>Filter</label>
+																<default>0</default>
+															</object>
+														</object>
+													</object>
+												</object>
+												<object class="sizeritem">
+													<option>1</option>
+													<flag>wxALL|wxEXPAND</flag>
+													<border>2</border>
+													<object class="wxListCtrl" name="aev_listequ">
+														<style>wxLC_ICON</style>
+													</object>
+												</object>
+											</object>
+										</object>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>1</option>
+									<flag>wxEXPAND</flag>
+									<border>5</border>
+									<object class="wxStaticBoxSizer">
+										<orient>wxVERTICAL</orient>
+										<label>PEPs of the Organization</label>
+										<object class="sizeritem">
+											<option>1</option>
+											<flag>wxEXPAND</flag>
+											<border>5</border>
+											<object class="wxBoxSizer">
+												<orient>wxVERTICAL</orient>
+												<object class="sizeritem">
+													<option>0</option>
+													<flag>wxEXPAND</flag>
+													<border>2</border>
+													<object class="wxBoxSizer">
+														<orient>wxHORIZONTAL</orient>
+														<object class="sizeritem">
+															<option>1</option>
+															<flag>wxALL</flag>
+															<border>2</border>
+															<object class="wxTextCtrl" name="AEV_txtfilter2">
+																<style>wxTE_PROCESS_ENTER</style>
+																<value></value>
+																<maxlength>0</maxlength>
+															</object>
+														</object>
+														<object class="sizeritem">
+															<option>0</option>
+															<flag>wxALL</flag>
+															<border>2</border>
+															<object class="wxButton" name="AEV_btnfilter2">
+																<label>Filter</label>
+																<default>0</default>
+															</object>
+														</object>
+													</object>
+												</object>
+												<object class="sizeritem">
+													<option>1</option>
+													<flag>wxALL|wxEXPAND</flag>
+													<border>2</border>
+													<object class="wxListCtrl" name="aev_listequ-org">
+														<style>wxLC_ICON</style>
+													</object>
+												</object>
+											</object>
+										</object>
+									</object>
+								</object>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<option>1</option>
+							<flag>wxEXPAND</flag>
+							<border>5</border>
+							<object class="wxStaticBoxSizer">
+								<orient>wxVERTICAL</orient>
+								<label>Annual Equipment Value</label>
+								<object class="sizeritem">
+									<option>1</option>
+									<flag>wxEXPAND</flag>
+									<border>5</border>
+									<object class="wxFlexGridSizer">
+										<rows>7</rows>
+										<cols>2</cols>
+										<vgap>0</vgap>
+										<hgap>0</hgap>
+										<growablecols></growablecols>
+										<growablerows></growablerows>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL</flag>
+											<border>5</border>
+											<object class="wxStaticText" name="m_staticText13">
+												<label>Equipment Cost (EC)</label>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL|wxEXPAND</flag>
+											<border>5</border>
+											<object class="wxTextCtrl" name="aev_textec">
+												<tooltip>Equipment cost (Ec), expressed in currency per year (e.g. $/year), refers to the annual cost of security PEPs, products or materials (e.g. purchasing, renting, leasing, licensing, etc) required for the regular operations of the infrastructure.</tooltip>
+												<value></value>
+												<maxlength>0</maxlength>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL</flag>
+											<border>5</border>
+											<object class="wxStaticText" name="m_staticText14">
+												<label>Service Cost (SC)</label>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>1</option>
+											<flag>wxALL|wxEXPAND</flag>
+											<border>5</border>
+											<object class="wxTextCtrl" name="aev_textsc">
+												<tooltip>Service cost (SC), expressed in currency per year (e.g. $/year), includes the costs of regular services (e.g. electricity, infrastructure costs, contracted insurance, etc), related to the business unit for its regular operations.</tooltip>
+												<value></value>
+												<maxlength>0</maxlength>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL</flag>
+											<border>5</border>
+											<object class="wxStaticText" name="m_staticText15">
+												<label>Personnel Cost (PC)</label>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL|wxEXPAND</flag>
+											<border>5</border>
+											<object class="wxTextCtrl" name="aev_textpc">
+												<tooltip>Personnel Cost (PC), expressed in currency per year (e.g. $/year), includes the cost of employees required for the regular operations of the infrastructure (e.g. salaries, bonuses, overtime payment, etc).</tooltip>
+												<value></value>
+												<maxlength>0</maxlength>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL</flag>
+											<border>5</border>
+											<object class="wxStaticText" name="m_staticText16">
+												<label>Resell Costs (RV)</label>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL|wxEXPAND</flag>
+											<border>5</border>
+											<object class="wxTextCtrl" name="aev_textrv">
+												<tooltip>Resell Costs (RV), expressed in currency per year (e.g. $/year), refers to the value of the security PEPs after their usage.</tooltip>
+												<value></value>
+												<maxlength>0</maxlength>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL</flag>
+											<border>5</border>
+											<object class="wxStaticText" name="m_staticText17">
+												<label>Other Costs (OC)</label>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL|wxEXPAND</flag>
+											<border>5</border>
+											<object class="wxTextCtrl" name="aev_textoc">
+												<tooltip>Other Costs (OC), expressed in currency per year, (e.g. $/year), refers to all other costs required for the regular operation of the system&apos;s infrastructure.</tooltip>
+												<value></value>
+												<maxlength>0</maxlength>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL</flag>
+											<border>5</border>
+											<object class="wxStaticText" name="m_staticText37">
+												<label>Number of Equipments</label>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL</flag>
+											<border>5</border>
+											<object class="wxTextCtrl" name="aev_textnumber">
+												<tooltip>The quantity of PEPs of this kind the organization has.</tooltip>
+												<value></value>
+												<maxlength>0</maxlength>
+											</object>
+										</object>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALL|wxEXPAND</flag>
+									<border>5</border>
+									<object class="wxStaticBoxSizer">
+										<orient>wxVERTICAL</orient>
+										<label>Give the total value</label>
+										<object class="sizeritem">
+											<option>1</option>
+											<flag>wxEXPAND</flag>
+											<border>5</border>
+											<object class="wxFlexGridSizer">
+												<rows>1</rows>
+												<cols>3</cols>
+												<vgap>0</vgap>
+												<hgap>0</hgap>
+												<growablecols></growablecols>
+												<growablerows></growablerows>
+												<object class="sizeritem">
+													<option>0</option>
+													<flag>wxALL</flag>
+													<border>5</border>
+													<object class="wxCheckBox" name="aev_checktotal">
+														<label>OK</label>
+														<checked>0</checked>
+													</object>
+												</object>
+												<object class="sizeritem">
+													<option>0</option>
+													<flag>wxALIGN_BOTTOM|wxALIGN_CENTER|wxALL</flag>
+													<border>10</border>
+													<object class="wxStaticText" name="m_staticText18">
+														<label>Total</label>
+													</object>
+												</object>
+												<object class="sizeritem">
+													<option>0</option>
+													<flag>wxALL|wxEXPAND</flag>
+													<border>5</border>
+													<object class="wxTextCtrl" name="aev_texttotal">
+														<enabled>0</enabled>
+														<tooltip>Total value of the AIV. These field is provided in case the admin does not have a knowledge of the single value of the costs (SC, PC, RV, OC) but instead it knows the total value of the AIV for the given PEP. If the value is provided the previous fields are not taken into account.</tooltip>
+														<value></value>
+														<maxlength>0</maxlength>
+													</object>
+												</object>
+											</object>
+										</object>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxEXPAND</flag>
+									<border>5</border>
+									<object class="wxGridSizer">
+										<rows>2</rows>
+										<cols>2</cols>
+										<vgap>0</vgap>
+										<hgap>0</hgap>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALIGN_CENTER|wxALL</flag>
+											<border>5</border>
+											<object class="wxButton" name="aev_btnok">
+												<label>OK</label>
+												<default>0</default>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALIGN_CENTER|wxALL</flag>
+											<border>5</border>
+											<object class="wxButton" name="aev_btncancel">
+												<label>Cancel</label>
+												<default>0</default>
+											</object>
+										</object>
+									</object>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxDialog" name="ALEEditor">
+		<style>wxDEFAULT_DIALOG_STYLE|wxMAXIMIZE_BOX|wxRESIZE_BORDER</style>
+		<size>680,580</size>
+		<title>Assign Detrimental Events to an Organization</title>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxToolBar" name="m_ALEtoolBar">
+					<style>wxTB_HORIZONTAL</style>
+					<bitmapsize></bitmapsize>
+					<margins></margins>
+					<packing>1</packing>
+					<separation>5</separation>
+					<object class="tool" name="ale_tooledit">
+						<label>tool</label>
+						<tooltip>Edit the ALE of an Detrimental Event</tooltip>
+						<longhelp></longhelp>
+						<bitmap>icons/Edit-medium.png</bitmap>
+					</object>
+					<object class="tool" name="ale_tooldelete">
+						<label>tool</label>
+						<tooltip>Remove the Detrimental Event from the Organization</tooltip>
+						<longhelp></longhelp>
+						<bitmap>icons/Delete-medium.png</bitmap>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND | wxALL</flag>
+				<border>5</border>
+				<object class="wxPanel" name="m_alepanel">
+					<style>wxTAB_TRAVERSAL</style>
+					<object class="wxGridSizer">
+						<rows>2</rows>
+						<cols>2</cols>
+						<vgap>0</vgap>
+						<hgap>0</hgap>
+						<object class="sizeritem">
+							<option>1</option>
+							<flag>wxEXPAND</flag>
+							<border>5</border>
+							<object class="wxBoxSizer">
+								<orient>wxVERTICAL</orient>
+								<object class="sizeritem">
+									<option>1</option>
+									<flag>wxEXPAND</flag>
+									<border>5</border>
+									<object class="wxStaticBoxSizer">
+										<orient>wxVERTICAL</orient>
+										<label>Detrimental Events</label>
+										<object class="sizeritem">
+											<option>1</option>
+											<flag>wxEXPAND</flag>
+											<border>5</border>
+											<object class="wxBoxSizer">
+												<orient>wxVERTICAL</orient>
+												<object class="sizeritem">
+													<option>0</option>
+													<flag>wxEXPAND</flag>
+													<border>2</border>
+													<object class="wxBoxSizer">
+														<orient>wxHORIZONTAL</orient>
+														<object class="sizeritem">
+															<option>1</option>
+															<flag>wxALL</flag>
+															<border>2</border>
+															<object class="wxTextCtrl" name="ALE_txtfilter1">
+																<style>wxTE_PROCESS_ENTER</style>
+																<value></value>
+																<maxlength>0</maxlength>
+															</object>
+														</object>
+														<object class="sizeritem">
+															<option>0</option>
+															<flag>wxALL</flag>
+															<border>2</border>
+															<object class="wxButton" name="ALE_btnfilter1">
+																<label>Filter</label>
+																<default>0</default>
+															</object>
+														</object>
+													</object>
+												</object>
+												<object class="sizeritem">
+													<option>1</option>
+													<flag>wxALL|wxEXPAND</flag>
+													<border>2</border>
+													<object class="wxListCtrl" name="ale_listinc">
+														<style>wxLC_ICON</style>
+													</object>
+												</object>
+											</object>
+										</object>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>1</option>
+									<flag>wxEXPAND</flag>
+									<border>5</border>
+									<object class="wxStaticBoxSizer">
+										<orient>wxVERTICAL</orient>
+										<label>Detrimental Events of the Organization</label>
+										<object class="sizeritem">
+											<option>1</option>
+											<flag>wxEXPAND</flag>
+											<border>5</border>
+											<object class="wxBoxSizer">
+												<orient>wxVERTICAL</orient>
+												<object class="sizeritem">
+													<option>0</option>
+													<flag>wxEXPAND</flag>
+													<border>2</border>
+													<object class="wxBoxSizer">
+														<orient>wxHORIZONTAL</orient>
+														<object class="sizeritem">
+															<option>1</option>
+															<flag>wxALL</flag>
+															<border>2</border>
+															<object class="wxTextCtrl" name="ALE_txtfilter2">
+																<style>wxTE_PROCESS_ENTER</style>
+																<value></value>
+																<maxlength>0</maxlength>
+															</object>
+														</object>
+														<object class="sizeritem">
+															<option>0</option>
+															<flag>wxALL</flag>
+															<border>2</border>
+															<object class="wxButton" name="ALE_btnfilter2">
+																<label>Filter</label>
+																<default>0</default>
+															</object>
+														</object>
+													</object>
+												</object>
+												<object class="sizeritem">
+													<option>1</option>
+													<flag>wxALL|wxEXPAND</flag>
+													<border>2</border>
+													<object class="wxListCtrl" name="ale_listinc-org">
+														<style>wxLC_ICON</style>
+													</object>
+												</object>
+											</object>
+										</object>
+									</object>
+								</object>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<option>1</option>
+							<flag>wxEXPAND</flag>
+							<border>5</border>
+							<object class="wxStaticBoxSizer">
+								<orient>wxVERTICAL</orient>
+								<label>Annual Loss Expectancy (ALE)</label>
+								<object class="sizeritem">
+									<option>1</option>
+									<flag>wxEXPAND</flag>
+									<border>5</border>
+									<object class="wxFlexGridSizer">
+										<rows>7</rows>
+										<cols>2</cols>
+										<vgap>0</vgap>
+										<hgap>0</hgap>
+										<growablecols></growablecols>
+										<growablerows></growablerows>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL</flag>
+											<border>5</border>
+											<object class="wxStaticText" name="m_staticText13">
+												<label>Loss of assets (LA)</label>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL|wxEXPAND</flag>
+											<border>5</border>
+											<object class="wxTextCtrl" name="ale_textla">
+												<tooltip>Loss of assets (La), expressed in currency (e.g. $), refers to the value of the physical assets that would be afected by an intrusion or attack (e.g. hardware, furniture, physical infrastructure, and other assets).</tooltip>
+												<value></value>
+												<maxlength>0</maxlength>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL</flag>
+											<border>5</border>
+											<object class="wxStaticText" name="m_staticText14">
+												<label>Loss of Data (LD)</label>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL|wxEXPAND</flag>
+											<border>5</border>
+											<object class="wxTextCtrl" name="ale_textld">
+												<tooltip>Loss of data (Ld), expressed in currency (e.g. $), refers to the value of the non-physical assets that would sufer a damage or modiication as a consequence of an intrusion or attack (software, databases, electronic documents, and other kind of information loss).</tooltip>
+												<value></value>
+												<maxlength>0</maxlength>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL</flag>
+											<border>5</border>
+											<object class="wxStaticText" name="m_staticText15">
+												<label>Lost of Reputation (LR)</label>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL|wxEXPAND</flag>
+											<border>5</border>
+											<object class="wxTextCtrl" name="ale_textlr">
+												<tooltip>Loss of reputation (Lr), expressed in currency (e.g. $), refers to the loss of image or credibility as a consequence of not providing the products or services at the expected levels.</tooltip>
+												<value></value>
+												<maxlength>0</maxlength>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL</flag>
+											<border>5</border>
+											<object class="wxStaticText" name="m_staticText16">
+												<label>Legal Procedures (LP)</label>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL|wxEXPAND</flag>
+											<border>5</border>
+											<object class="wxTextCtrl" name="ale_textlp">
+												<tooltip>Legal procedures (Lp), expressed in currency (e.g. $), refers to the losses due to legal penalties that may arise as a consequence of not accomplishing the contracted obligations with clients.</tooltip>
+												<value></value>
+												<maxlength>0</maxlength>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL</flag>
+											<border>5</border>
+											<object class="wxStaticText" name="m_staticText17">
+												<label>Loss of revenues \nfrom existing clients (LREC)</label>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL|wxEXPAND</flag>
+											<border>5</border>
+											<object class="wxTextCtrl" name="ale_textlrec">
+												<tooltip>Loss of revenues from existing clients (Lrec), expressed in currency (e.g. $), are the losses occurred during the Detrimental Event as a consequence of not providing the products or services to the clients at the expected levels.</tooltip>
+												<value></value>
+												<maxlength>0</maxlength>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL</flag>
+											<border>5</border>
+											<object class="wxStaticText" name="m_staticText26">
+												<label>Loss of revenue \nfrom potential clients (LRPC)</label>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL</flag>
+											<border>5</border>
+											<object class="wxTextCtrl" name="ale_textlrpc">
+												<tooltip>Loss of revenue from potential clients (Lrpc), expressed in currency (e.g. $), refers to the losses of not acquiring new clients as a consequence of the occurred Detrimental Event.</tooltip>
+												<value></value>
+												<maxlength>0</maxlength>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL</flag>
+											<border>5</border>
+											<object class="wxStaticText" name="m_staticText27">
+												<label>Other losses (OL)</label>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL</flag>
+											<border>5</border>
+											<object class="wxTextCtrl" name="ale_textol">
+												<tooltip>Other losses (Ol), expressed in currency (e.g. $), considers all other losses that may occur during the Detrimental Event (e.g. recovering time, external services, etc.)</tooltip>
+												<value></value>
+												<maxlength>0</maxlength>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL</flag>
+											<border>5</border>
+											<object class="wxStaticText" name="m_staticText29">
+												<label>Contracted insurance (CI)</label>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL</flag>
+											<border>5</border>
+											<object class="wxTextCtrl" name="ale_textci">
+												<tooltip>Contracted insurance (Ci), expressed in currency (e.g. $), if the organization has an insurance that covers part of the losses, this value is subtracted from the total amount of losses.</tooltip>
+												<value></value>
+												<maxlength>0</maxlength>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL</flag>
+											<border>5</border>
+											<object class="wxStaticText" name="m_staticText30">
+												<label>Annual Rate of Occurrence (ARO)</label>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALL</flag>
+											<border>5</border>
+											<object class="wxTextCtrl" name="ale_textaro">
+												<tooltip>Annual Rate of Occurrence (ARO), expressed in times per year, refers to the estimated frequency of the attack.</tooltip>
+												<value></value>
+												<maxlength>0</maxlength>
+											</object>
+										</object>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxALL|wxEXPAND</flag>
+									<border>5</border>
+									<object class="wxStaticBoxSizer">
+										<orient>wxVERTICAL</orient>
+										<label>Give the total ALE Value</label>
+										<object class="sizeritem">
+											<option>1</option>
+											<flag>wxEXPAND</flag>
+											<border>5</border>
+											<object class="wxFlexGridSizer">
+												<rows>1</rows>
+												<cols>3</cols>
+												<vgap>0</vgap>
+												<hgap>0</hgap>
+												<growablecols></growablecols>
+												<growablerows></growablerows>
+												<object class="sizeritem">
+													<option>0</option>
+													<flag>wxALL</flag>
+													<border>5</border>
+													<object class="wxCheckBox" name="ale_checktotal">
+														<label>OK</label>
+														<checked>0</checked>
+													</object>
+												</object>
+												<object class="sizeritem">
+													<option>0</option>
+													<flag>wxALIGN_BOTTOM|wxALIGN_CENTER|wxALL</flag>
+													<border>10</border>
+													<object class="wxStaticText" name="m_staticText18">
+														<label>Total</label>
+													</object>
+												</object>
+												<object class="sizeritem">
+													<option>0</option>
+													<flag>wxALL|wxEXPAND</flag>
+													<border>5</border>
+													<object class="wxTextCtrl" name="ale_texttotal">
+														<enabled>0</enabled>
+														<tooltip>Total value of the AIV. These field is provided in case the admin does not have a knowledge of the single value of the costs (SC, PC, RV, OC) but instead it knows the total value of the AIV for the given PEP. If the value is provided the previous fields are not taken into account.</tooltip>
+														<value></value>
+														<maxlength>0</maxlength>
+													</object>
+												</object>
+											</object>
+										</object>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<option>0</option>
+									<flag>wxEXPAND</flag>
+									<border>5</border>
+									<object class="wxGridSizer">
+										<rows>2</rows>
+										<cols>2</cols>
+										<vgap>0</vgap>
+										<hgap>0</hgap>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALIGN_CENTER|wxALL</flag>
+											<border>5</border>
+											<object class="wxButton" name="ale_btnok">
+												<label>OK</label>
+												<default>0</default>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<option>0</option>
+											<flag>wxALIGN_CENTER|wxALL</flag>
+											<border>5</border>
+											<object class="wxButton" name="ale_btncancel">
+												<label>Cancel</label>
+												<default>0</default>
+											</object>
+										</object>
+									</object>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxDialog" name="RMEditor">
+		<style>wxDEFAULT_DIALOG_STYLE</style>
+		<size>295,235</size>
+		<title>Risk Mitigation Editor</title>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxToolBar" name="m_toolBar9">
+					<style>wxTB_HORIZONTAL</style>
+					<bitmapsize></bitmapsize>
+					<margins></margins>
+					<packing>1</packing>
+					<separation>5</separation>
+					<object class="tool" name="rm_tooldelete">
+						<label>tool</label>
+						<tooltip>Delete the Risk Mitigation values</tooltip>
+						<longhelp>Delete the Risk Mitigation values</longhelp>
+						<bitmap>icons/Delete-small.png</bitmap>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxFlexGridSizer">
+					<rows>2</rows>
+					<cols>3</cols>
+					<vgap>0</vgap>
+					<hgap>0</hgap>
+					<growablecols></growablecols>
+					<growablerows></growablerows>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_BOTTOM|wxALIGN_CENTER|wxALL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText38">
+							<label>Efectiveness Factor (EF)</label>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_BOTTOM|wxALL|wxEXPAND</flag>
+						<border>2</border>
+						<object class="wxTextCtrl" name="rm_textef">
+							<tooltip>Efectiveness Factor (EF), is the percentage of reduction of the total Detrimental Event cost that is given from the enforcement of a security measure.</tooltip>
+							<value></value>
+							<maxlength>0</maxlength>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_BOTTOM|wxALIGN_CENTER|wxALL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText42">
+							<label>(%)</label>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_BOTTOM|wxALL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText39">
+							<label>Coverage (COV)</label>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_BOTTOM|wxALL|wxEXPAND</flag>
+						<border>2</border>
+						<object class="wxTextCtrl" name="rm_textcov">
+							<tooltip>Coverage (COV), is the percentage of the attack surface that is covered and controlled by the Mitigation Action.</tooltip>
+							<value></value>
+							<maxlength>0</maxlength>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_BOTTOM|wxALIGN_CENTER|wxALL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText43">
+							<label>(%)</label>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>2</border>
+				<object class="wxStaticBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<label>Give the Total Value</label>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxEXPAND</flag>
+						<border>5</border>
+						<object class="wxFlexGridSizer">
+							<rows>1</rows>
+							<cols>4</cols>
+							<vgap>0</vgap>
+							<hgap>0</hgap>
+							<growablecols></growablecols>
+							<growablerows></growablerows>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALL</flag>
+								<border>5</border>
+								<object class="wxCheckBox" name="rm_checktotal">
+									<label>OK</label>
+									<checked>0</checked>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALIGN_BOTTOM|wxALIGN_CENTER|wxALL</flag>
+								<border>5</border>
+								<object class="wxStaticText" name="m_staticText41">
+									<label>Total</label>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALIGN_BOTTOM|wxALL|wxEXPAND</flag>
+								<border>2</border>
+								<object class="wxTextCtrl" name="rm_texttotal">
+									<enabled>0</enabled>
+									<value></value>
+									<maxlength>0</maxlength>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<option>0</option>
+								<flag>wxALIGN_BOTTOM|wxALIGN_CENTER|wxALL</flag>
+								<border>5</border>
+								<object class="wxStaticText" name="m_staticText44">
+									<label>(%)</label>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxGridSizer">
+					<rows>1</rows>
+					<cols>2</cols>
+					<vgap>0</vgap>
+					<hgap>0</hgap>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER|wxALL</flag>
+						<border>5</border>
+						<object class="wxButton" name="rm_btnok">
+							<label>Assign</label>
+							<default>0</default>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER|wxALL</flag>
+						<border>5</border>
+						<object class="wxButton" name="rm_btncancel">
+							<label>Cancel</label>
+							<default>0</default>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxFrame" name="RORICalFrame">
+		<style>wxDEFAULT_FRAME_STYLE|wxTAB_TRAVERSAL</style>
+		<size>702,469</size>
+		<title>Return On Response Investment Calculation</title>
+		<object class="wxMenuBar" name="RORICal_menubar">
+			<label>MyMenuBar</label>
+			<object class="wxMenu" name="RORICal_menufile">
+				<label>File</label>
+				<object class="wxMenuItem" name="RORICal_exit">
+					<label>Exit</label>
+					<help></help>
+				</object>
+			</object>
+		</object>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxStaticBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<label>Organizations</label>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<object class="wxChoice" name="RORICal_orgList">
+							<selection>0</selection>
+							<content />
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxGridSizer">
+					<rows>2</rows>
+					<cols>2</cols>
+					<vgap>0</vgap>
+					<hgap>0</hgap>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<object class="wxStaticBoxSizer">
+							<orient>wxVERTICAL</orient>
+							<label>Detrimental Events</label>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>5</border>
+								<object class="wxListCtrl" name="RORICal_incList">
+									<style>wxLC_ICON</style>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<object class="wxStaticBoxSizer">
+							<orient>wxVERTICAL</orient>
+							<label>Mitigation Actions</label>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>5</border>
+								<object class="wxListCtrl" name="RORICal_couList">
+									<style>wxLC_ICON</style>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALIGN_CENTER|wxALL</flag>
+				<border>5</border>
+				<object class="wxButton" name="RORICal_calcBtn">
+					<label>Perform RORI Evaluation</label>
+					<default>0</default>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxFrame" name="GraphFrame">
+		<style>wxDEFAULT_FRAME_STYLE|wxTAB_TRAVERSAL</style>
+		<size>702,469</size>
+		<title>Graphical Representation</title>
+		<object class="wxMenuBar" name="Graph_menubar">
+			<label>MyMenuBar</label>
+			<object class="wxMenu" name="Graph_menufile">
+				<label>File</label>
+				<object class="wxMenuItem" name="Graph_exit">
+					<label>Exit</label>
+					<help></help>
+				</object>
+			</object>
+		</object>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxStaticBoxSizer">
+					<orient>wxVERTICAL</orient>
+					<label>Organizations</label>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<object class="wxChoice" name="Graph_orgList">
+							<selection>0</selection>
+							<content />
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxGridSizer">
+					<rows>2</rows>
+					<cols>2</cols>
+					<vgap>0</vgap>
+					<hgap>0</hgap>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<object class="wxStaticBoxSizer">
+							<orient>wxVERTICAL</orient>
+							<label>Detrimental Events</label>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>5</border>
+								<object class="wxListCtrl" name="Graph_incList">
+									<style>wxLC_ICON</style>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>1</option>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<object class="wxStaticBoxSizer">
+							<orient>wxVERTICAL</orient>
+							<label>Mitigation Actions</label>
+							<object class="sizeritem">
+								<option>1</option>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>5</border>
+								<object class="wxListCtrl" name="Graph_couList">
+									<style>wxLC_ICON</style>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>0</option>
+				<flag>wxALIGN_CENTER|wxALL</flag>
+				<border>5</border>
+				<object class="wxButton" name="Graph_callAVbtn">
+					<label>Display Graphical Representation</label>
+					<default>0</default>
+				</object>
+			</object>
+		</object>
+	</object>
+</resource>

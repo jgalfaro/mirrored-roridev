@@ -1,0 +1,529 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": false,
+    "type": "object",
+    "definitions": {
+        "AutomataBasedOngoingAttackPlan": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "ongoingAttackPlan_Id": {
+                    "type": "string"
+                },
+                "lastCompromizedNode_Ident": {
+                    "type": "string"
+                },
+                "exploitation_Time": {
+                    "type": "string"
+                },
+                "normalizedAlert_Id": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "Address": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "address": {
+                    "type": "string"
+                },
+                "netmask": {
+                    "type": "string"
+                },
+                "ident": {
+                    "type": "string"
+                },
+                "vlan_num": {
+                     "$ref": "#/definitions/int"
+                },
+                "category": {
+                     "$ref": "#/definitions/IPAddressType"
+                },
+                "vlan_name": {
+                    "type": "string"
+                }
+            }
+        },
+        "Egress": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "protocol": {
+                     "$ref": "#/definitions/Protocol"
+                },
+                "address": {
+                     "$ref": "#/definitions/Address"
+                },
+                "interface_Ident": {
+                    "type": "string"
+                },
+                "portList": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/PortRangeList"
+                    }
+                }
+            }
+        },
+        "AttackPath": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "attackPathNodes": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/AttackPathNode"
+                    }
+                },
+                "attackPath_Action": {
+                     "$ref": "#/definitions/AttackPathAction"
+                },
+                "attackPath_Ident": {
+                    "type": "string"
+                }
+            }
+        },
+        "AttackPathProgress": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "mostAdvancedAttackPlan_Ident": {
+                    "type": "string"
+                },
+                "lastCompromisedNode_Ident": {
+                    "type": "string"
+                },
+                "queryBasedOngoingAttack": {
+                     "$ref": "#/definitions/QueryBasedOngoingAttack"
+                },
+                "automataBasedOngoingAttackPlan": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/AutomataBasedOngoingAttackPlan"
+                    }
+                },
+                "attackPath_Ident": {
+                    "type": "string"
+                },
+                "attackPathProgress_Ident": {
+                    "type": "string"
+                }
+            }
+        },
+        "AttackPathNode": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "ingress": {
+                     "$ref": "#/definitions/Ingress"
+                },
+                "node_Ident": {
+                    "type": "string"
+                },
+                "maxGainedPrivilege": {
+                     "$ref": "#/definitions/Privilege"
+                },
+                "responsibleNodes": {
+                     "$ref": "#/definitions/ResponsibleNodesList"
+                },
+                "egress": {
+                     "$ref": "#/definitions/Egress"
+                },
+                "attackPathNodeVulnerability": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/AttackPathNodeVulnerability"
+                    }
+                }
+            }
+        },
+        "AttackPathNodeVulnerability": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "protocol": {
+                     "$ref": "#/definitions/Protocol"
+                },
+                "exploited_Range": {
+                     "$ref": "#/definitions/Exploitability"
+                },
+                "portList": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/PortRangeList"
+                    }
+                },
+                "classification": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/Classification"
+                    }
+                }
+            }
+        },
+        "ExploitedEdge": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "occurrences": {
+                     "$ref": "#/definitions/int"
+                },
+                "normalizedAlert_Ident": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "exploitation_Time": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "occurrences"
+            ]
+        },
+        "Node_Ident": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "node": {
+                    "type": "string"
+                },
+                "rank": {
+                     "$ref": "#/definitions/int"
+                }
+            }
+        },
+        "AutomataBasedElementaryRisk": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "ongoingAttackPlan_Ident": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "success_Likelyhood": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/double"
+                    }
+                },
+                "riskAssesmentProcess": {
+                     "$ref": "#/definitions/RiskAssesmentProcess"
+                },
+                "impact_i": {
+                    "type": "boolean"
+                },
+                "impact": {
+                    "type": "string"
+                },
+                "impact_c": {
+                    "type": "boolean"
+                },
+                "impact_a": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "impact_i",
+                "impact_c",
+                "impact_a"
+            ]
+        },
+        "IPAddressType": {
+            "enum": [
+                "IPV4",
+                "IPV6",
+                "Unknown"
+            ]
+        },
+        "Exploitability": {
+            "enum": [
+                "local",
+                "network"
+            ]
+        },
+        "Classification": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "ident": {
+                    "type": "string"
+                },
+                "text": {
+                    "type": "string"
+                }
+            }
+        },
+        "Protocol": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                }
+            }
+        },
+        "Engine": {
+            "enum": [
+                "Bash",
+                "Perl",
+                "Python",
+                "Ruby",
+                "Javascript"
+            ]
+        },
+        "ProactiveElementaryRisk": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "likelihood": {
+                     "$ref": "#/definitions/double"
+                },
+                "riskAssesmentProcess": {
+                     "$ref": "#/definitions/RiskAssesmentProcess"
+                },
+                "impact_i": {
+                    "type": "boolean"
+                },
+                "impact": {
+                    "type": "string"
+                },
+                "impact_c": {
+                    "type": "boolean"
+                },
+                "attackPath_Ident": {
+                    "type": "string"
+                },
+                "impact_a": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "likelihood",
+                "impact_c",
+                "impact_i",
+                "impact_a"
+            ]
+        },
+        "PortRangeList": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "portRange": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/PortRange"
+                    }
+                }
+            }
+        },
+        "double": {
+            "maximum": 1.7976931348623157e+308,
+            "type": "number",
+            "minimum": 5e-324
+        },
+        "IPProtocol": {
+            "enum": [
+                "UDP",
+                "TCP",
+                "ICMP"
+            ]
+        },
+        "AttackPathAction": {
+            "enum": [
+                "newPath",
+                "delete"
+            ]
+        },
+        "Ingress": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "address": {
+                     "$ref": "#/definitions/Address"
+                },
+                "interface_Ident": {
+                    "type": "string"
+                }
+            }
+        },
+        "QueryBasedReactiveElementaryRisk": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "ongoingAttackPlan_Ident": {
+                    "type": "string"
+                },
+                "success_Likelyhood": {
+                     "$ref": "#/definitions/double"
+                },
+                "riskAssesmentProcess": {
+                     "$ref": "#/definitions/RiskAssesmentProcess"
+                },
+                "impact_i": {
+                    "type": "boolean"
+                },
+                "impact": {
+                    "type": "string"
+                },
+                "impact_c": {
+                    "type": "boolean"
+                },
+                "impact_a": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "impact_c",
+                "impact_i",
+                "success_Likelyhood",
+                "impact_a"
+            ]
+        },
+        "int": {
+            "maximum": 2147483647,
+            "type": "integer",
+            "minimum": -2147483648
+        },
+        "PortRange": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "port": {
+                    "type": "string"
+                },
+                "ip_Protocol": {
+                     "$ref": "#/definitions/IPProtocol"
+                }
+            }
+        },
+        "QueryBasedOngoingAttack": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "exploitedEdge": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/ExploitedEdge"
+                    }
+                },
+                "lastCompromizedNode_Ident": {
+                    "type": "string"
+                },
+                "ongoingAttack_Ident": {
+                    "type": "string"
+                }
+            }
+        },
+        "RiskAssesmentProcess": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "engine": {
+                     "$ref": "#/definitions/Engine"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "command": {
+                    "type": "string"
+                }
+            }
+        },
+        "ResponsibleNodesList": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "node_Ident": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/Node_Ident"
+                    }
+                }
+            }
+        },
+        "Privilege": {
+            "enum": [
+                "Root",
+                "User",
+                "None",
+                "Unknown"
+            ]
+        },
+        "DetrimentalEvent": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "proactiveElementaryRisk": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/ProactiveElementaryRisk"
+                    }
+                },
+                "automataBasedElementaryRisk": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/AutomataBasedElementaryRisk"
+                    }
+                },
+                "queryBasedReactiveElementaryRisk": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/QueryBasedReactiveElementaryRisk"
+                    }
+                },
+                "name": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "related_Business_Process_Ident": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "properties": {
+        "monitored_System_Ident": {
+            "type": "string"
+        },
+        "detrimentalEvent": {
+            "type": "array",
+            "items": {
+                 "$ref": "#/definitions/DetrimentalEvent"
+            }
+        },
+        "riskProfile_Ident": {
+            "type": "string"
+        },
+        "attackPathProgress": {
+            "type": "array",
+            "items": {
+                 "$ref": "#/definitions/AttackPathProgress"
+            }
+        },
+        "attackPath": {
+            "type": "array",
+            "items": {
+                 "$ref": "#/definitions/AttackPath"
+            }
+        },
+        "snapshot_Ident": {
+            "type": "string"
+        }
+    }
+}

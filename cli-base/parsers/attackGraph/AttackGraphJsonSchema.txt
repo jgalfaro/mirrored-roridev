@@ -1,0 +1,267 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": false,
+    "type": "object",
+    "definitions": {
+        "PortRangeList": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "portRange": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "PortRange"
+                    }
+                }
+            }
+        },
+        "AttackGraphType": {
+            "enum": [
+                "exhaustive",
+                "differential"
+            ]
+        },
+        "Address": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "address": {
+                    "type": "string"
+                },
+                "netmask": {
+                    "type": "string"
+                },
+                "vlan_num": {
+                    "$ref": "int"
+                },
+                "ident": {
+                    "type": "string"
+                },
+                "category": {
+                    "$ref": "IPAddressType"
+                },
+                "vlan_name": {
+                    "type": "string"
+                }
+            }
+        },
+        "IPProtocol": {
+            "enum": [
+                "UDP",
+                "TCP",
+                "ICMP"
+            ]
+        },
+        "AttackPathAction": {
+            "enum": [
+                "newPath",
+                "delete"
+            ]
+        },
+        "Ingress": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "address": {
+                    "$ref": "Address"
+                },
+                "interface_Ident": {
+                    "type": "string"
+                }
+            }
+        },
+        "Egress": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "protocol": {
+                    "$ref": "Protocol"
+                },
+                "address": {
+                    "$ref": "Address"
+                },
+                "interface_Ident": {
+                    "type": "string"
+                },
+                "portList": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "PortRangeList"
+                    }
+                }
+            }
+        },
+        "AttackPath": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "attackPathNodes": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "AttackPathNode"
+                    }
+                },
+                "attackPath_Action": {
+                    "$ref": "AttackPathAction"
+                },
+                "attackPath_Ident": {
+                    "type": "string"
+                }
+            }
+        },
+        "AttackPathNode": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "ingress": {
+                    "$ref": "Ingress"
+                },
+                "node_Ident": {
+                    "type": "string"
+                },
+                "maxGainedPrivilege": {
+                    "$ref": "Privilege"
+                },
+                "responsibleNodes": {
+                    "$ref": "ResponsibleNodesList"
+                },
+                "attackPathNodeVulnerability": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "AttackPathNodeVulnerability"
+                    }
+                },
+                "egress": {
+                    "$ref": "Egress"
+                }
+            }
+        },
+        "AttackPathNodeVulnerability": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "exploited_Range": {
+                    "$ref": "Exploitability"
+                },
+                "protocol": {
+                    "$ref": "Protocol"
+                },
+                "portList": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "PortRangeList"
+                    }
+                },
+                "classification": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "Classification"
+                    }
+                }
+            }
+        },
+        "int": {
+            "maximum": 2147483647,
+            "type": "integer",
+            "minimum": -2147483648
+        },
+        "PortRange": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "port": {
+                    "type": "string"
+                },
+                "ip_Protocol": {
+                    "$ref": "IPProtocol"
+                }
+            }
+        },
+        "Node_Ident": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "node": {
+                    "type": "string"
+                },
+                "rank": {
+                    "$ref": "int"
+                }
+            }
+        },
+        "IPAddressType": {
+            "enum": [
+                "IPV4",
+                "IPV6",
+                "Unknown"
+            ]
+        },
+        "Exploitability": {
+            "enum": [
+                "local",
+                "network"
+            ]
+        },
+        "Classification": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "ident": {
+                    "type": "string"
+                },
+                "text": {
+                    "type": "string"
+                }
+            }
+        },
+        "ResponsibleNodesList": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "node_Ident": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "Node_Ident"
+                    }
+                }
+            }
+        },
+        "Privilege": {
+            "enum": [
+                "Root",
+                "User",
+                "None",
+                "Unknown"
+            ]
+        },
+        "Protocol": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "properties": {
+        "monitored_System_Ident": {
+            "type": "string"
+        },
+        "attackGraphType": {
+            "$ref": "#/definitions/AttackGraphType"
+        },
+        "snapshot_Ident": {
+            "type": "string"
+        },
+        "attackPath": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/AttackPath"
+            }
+        }
+    }
+}

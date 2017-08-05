@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RORI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ORGANIZATIONS>
+	   <organization id="1" name="Naples Telecom" description="Telecommunication Entreprise based in Naples (Italy) operating in the field of Information and Communication Technology" id_equipments="1, 2, 3, 4, 5, 6" xpath="xpath" />
+	</ORGANIZATIONS>
+
+	<EQUIPMENTS>
+	   <equipment id="1" name="E2" type="Sensor Tamper Resist" AEV="1000" xpath="xpath" />
+	   <equipment id="2" name="E4" type="IDS-IPS" AEV="2500" xpath="xpath" />
+	   <equipment id="3" name="E5" type="Firewall" AEV="2000" xpath="xpath" />
+	   <equipment id="4" name="E7" type="Access Control" AEV="1500" xpath="xpath" />
+	   <equipment id="5" name="E8" type="System Monitoring" AEV="1200" xpath="xpath" />
+	   <equipment id="6" name="E9" type="Communication Protocol" AEV="500" xpath="xpath" />
+	</EQUIPMENTS>
+
+	<COUNTERMEASURES>
+	   <countermeasure id="1" name="NOOP" description="This Solution considers to accept the risk and does not require any modifications" totally_restrictive="yes" restriction="" id_equipment="" id_rm="1" id_arc="1" xpath="xpath" />
+
+	   <countermeasure id="2" name="Privilege Separation" description="Enforce separation of privileges is useful by preventing users to perform actions they are not allowed" totally_restrictive="no" restriction="1" id_equipment="4" id_rm="2" id_arc="2" xpath="xpath" />
+
+           <countermeasure id="3" name="Active Alert Mode" description="This countermeasure fires an alert indicating that the control station is suspected to be under attack" totally_restrictive="no" restriction="1" id_equipment="2" id_rm="3" id_arc="3" xpath="xpath" />	   
+
+           <countermeasure id="4" name="Disable Remote Connections to the Control Station" description="Allow only local connections to the control station to authorized users (Switch from 'remote' to 'not-remote')" totally_restrictive="no" restriction="1" id_equipment="3" id_rm="4" id_arc="4" xpath="xpath" />
+
+	   <countermeasure id="5" name="Enable Multiple Monitoring Indication" description="This countermeasure activates two or more monitoring systems to verify the water level indication obtained by the sensors" totally_restrictive="no" restriction="1" id_equipment="5" id_rm="5" id_arc="5" xpath="xpath" />
+
+	   <countermeasure id="6" name="Restart Sensor Settings" description="It erases the current sensor values and request for new thresholds" totally_restrictive="no" restriction="1" id_equipment="6" id_rm="6" id_arc="6" xpath="xpath" />
+	   
+	   <countermeasure id="7" name="Activate Back-up Sensors" description="Switch 'off' current sensors and switch 'on' back-up sensors" totally_restrictive="no" restriction="1" id_equipment="2" id_rm="7" id_arc="7" xpath="xpath" />
+	</COUNTERMEASURES>
+
+	<RISK_MITIGATION>
+	   <rm id="1" EF="0.00" COV="0.00" RM="" xpath="xpath" />
+	   <rm id="2" EF="0.80" COV="0.60" RM="" xpath="xpath" />
+	   <rm id="3" EF="0.60" COV="0.45" RM="" xpath="xpath" />
+	   <rm id="4" EF="0.70" COV="0.85" RM="" xpath="xpath" />
+	   <rm id="5" EF="0.85" COV="0.75" RM="" xpath="xpath" />
+	   <rm id="6" EF="0.70" COV="0.55" RM="" xpath="xpath" />
+	   <rm id="7" EF="0.90" COV="0.70" RM="" xpath="xpath" />
+	</RISK_MITIGATION>
+
+	<ANNUAL_RESPONSE_COST>
+	   <arc id="1" COM="" COI="" ODC="" IC="" total="0" xpath="xpath" />
+	   <arc id="2" COM="" COI="" ODC="" IC="" total="200" xpath="xpath" />
+	   <arc id="3" COM="" COI="" ODC="" IC="" total="300" xpath="xpath" />
+	   <arc id="4" COM="" COI="" ODC="" IC="" total="500" xpath="xpath" />
+	   <arc id="5" COM="" COI="" ODC="" IC="" total="700" xpath="xpath" />
+	   <arc id="6" COM="" COI="" ODC="" IC="" total="200" xpath="xpath" />
+	   <arc id="7" COM="" COI="" ODC="" IC="" total="400" xpath="xpath" />
+	</ANNUAL_RESPONSE_COST>
+
+	<INCIDENTS>
+           <incident id="1" name="Control Station Hacking Attack" description="A machine succeds in controlling remotely an important asset in the Control Station central." risk_level="high" id_countermeasure="1, 2, 3, 4, 5, 6, 7" id_organization="1" id_ale="1" />
+	</INCIDENTS>
+
+	<ANNUAL_LOSS_EXPECTANCY>
+	  <ale id="1" LA="" LD="" LR="" LP="" LREC="" LRPC="" OL="" CI="" ARO="" total="50000" />
+	</ANNUAL_LOSS_EXPECTANCY>
+</RORI>
+

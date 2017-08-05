@@ -1,0 +1,183 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": false,
+    "type": "object",
+    "definitions": {
+        "ActionType": {
+            "enum": [
+                "OnLikelihood",
+                "OnImpact",
+                "OnAll"
+            ]
+        },
+        "FirstOrderLogicPredicate": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "negation": {
+                    "type": "boolean"
+                },
+                "anticorrelator_Kind": {
+                     "$ref": "#/definitions/AnticorrelatorKind"
+                },
+                "parameter": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/Parameter"
+                    }
+                },
+                "name": {
+                    "type": "string"
+                }
+            }
+        },
+        "OrBacExtractor": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "extractorProcess": {
+                     "$ref": "#/definitions/ExtractorProcess"
+                },
+                "scope": {
+                     "$ref": "#/definitions/Scope"
+                },
+                "type": {
+                     "$ref": "#/definitions/ExtractorType"
+                }
+            }
+        },
+        "ExtractorType": {
+            "enum": [
+                "OrBacRuleType",
+                "OrBacSubject",
+                "OrBacAction",
+                "OrBacObject"
+            ]
+        },
+        "AnticorrelatorKind": {
+            "enum": [
+                "Panoptesec",
+                "BasedOnMulValGraphs"
+            ]
+        },
+        "ExtractorProcess": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "engine": {
+                     "$ref": "#/definitions/Engine"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "command": {
+                    "type": "string"
+                }
+            }
+        },
+        "MitigationAction": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "mitigationAction_Ident": {
+                    "type": "string"
+                },
+                "orBacTemplates": {
+                     "$ref": "#/definitions/OrBacExtractor"
+                },
+                "scope": {
+                     "$ref": "#/definitions/Scope"
+                },
+                "annualResponseCost": {
+                     "$ref": "#/definitions/AnnualResponseCost"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "consequences": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/FirstOrderLogicPredicate"
+                    }
+                },
+                "description": {
+                    "type": "string"
+                },
+                "enforcementPoints": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/EnforcementPoint"
+                    }
+                },
+                "type": {
+                     "$ref": "#/definitions/ActionType"
+                }
+            }
+        },
+        "int": {
+            "maximum": 2147483647,
+            "type": "integer",
+            "minimum": -2147483648
+        },
+        "EnforcementPoint": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "ident": {
+                    "type": "string"
+                }
+            }
+        },
+        "Scope": {
+            "enum": [
+                "Tactical",
+                "Strategic",
+                "All"
+            ]
+        },
+        "AnnualResponseCost": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "totalCost": {
+                     "$ref": "#/definitions/int"
+                }
+            }
+        },
+        "Parameter": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "string"
+                }
+            }
+        },
+        "Engine": {
+            "enum": [
+                "Bash",
+                "Perl",
+                "Python",
+                "Ruby",
+                "Javascript"
+            ]
+        }
+    },
+    "properties": {
+        "mitigationAction": {
+            "type": "array",
+            "items": {
+                 "$ref": "#/definitions/MitigationAction"
+            }
+        },
+        "monitored_System_Ident": {
+            "type": "string"
+        }
+    }
+}

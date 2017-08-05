@@ -1,0 +1,297 @@
+{
+  "monitored_System_Ident": "Panoptesec-DAM",
+  "detrimentalEvent": [
+    {
+      "proactiveElementaryRisk": [
+        {
+          "likelihood": 44.5,
+          "riskAssesmentProcess": {
+            "engine": "Ruby",
+            "description": "Ruby script",
+            "command": "ruby command.rb"
+          },
+          "impact_i": true,
+          "impact": "high",
+          "impact_c": false,
+          "attackPath_Ident": "bababa76-c1cf-4a2c-bf5c-a2f3a9cccccc",
+          "impact_a": true
+        }
+      ],
+      "automataBasedElementaryRisk": [
+        {
+          "ongoingAttackPlan_Ident": [
+            "3a3a3a76-c1cf-4a2c-bf5c-a2f3a9cccccc",
+            "5a5a5a76-c1cf-4a2c-bf5c-a2f3a9cccccc"
+          ],
+          "success_Likelyhood": [
+            63.3,
+            54.9,
+            90.1
+          ],
+          "riskAssesmentProcess": {
+            "engine": "Python",
+            "description": "Python script",
+            "command": "./script.py"
+          },
+          "impact_i": false,
+          "impact": "low",
+          "impact_c": true,
+          "impact_a": false
+        }
+      ],
+      "queryBasedReactiveElementaryRisk": [
+        {
+          "ongoingAttackPlan_Ident": "4a4a4a76-c1cf-4a2c-bf5c-a2f3a9cccccc",
+          "success_Likelyhood": 22.4,
+          "riskAssesmentProcess": {
+            "engine": "Bash",
+            "description": "Bash script",
+            "command": "sh script.sh"
+          },
+          "impact_i": false,
+          "impact": "middle",
+          "impact_c": false,
+          "impact_a": true
+        }
+      ],
+      "name": "Control Station Hacking Threat",
+      "description": "A machine succeds in controlling remotely an important asset in the Control Station central",
+      "ident": "A7",
+      "related_Business_Process_Ident": "bcbcbc76-cccf-4a2c-bf55-a2f3a9cccccc"
+    },
+    {
+      "proactiveElementaryRisk": [
+        {
+          "likelihood": 44.5,
+          "riskAssesmentProcess": {
+            "engine": "Ruby",
+            "description": "Ruby script",
+            "command": "ruby command.rb"
+          },
+          "impact_i": true,
+          "impact": "medium",
+          "impact_c": false,
+          "attackPath_Ident": "bababa76-c1cf-4a2c-bf5c-a2f3a9cccccc",
+          "impact_a": true
+        }
+      ],
+      "automataBasedElementaryRisk": [
+        {
+          "ongoingAttackPlan_Ident": [
+            "3a3a3a76-c1cf-4a2c-bf5c-a2f3a9cccccc",
+            "5a5a5a76-c1cf-4a2c-bf5c-a2f3a9cccccc"
+          ],
+          "success_Likelyhood": [
+            63.3,
+            54.9,
+            90.1
+          ],
+          "riskAssesmentProcess": {
+            "engine": "Python",
+            "description": "Python script",
+            "command": "./script.py"
+          },
+          "impact_i": false,
+          "impact": "low",
+          "impact_c": true,
+          "impact_a": false
+        }
+      ],
+      "queryBasedReactiveElementaryRisk": [
+        {
+          "ongoingAttackPlan_Ident": "4a4a4a76-c1cf-4a2c-bf5c-a2f3a9cccccc",
+          "success_Likelyhood": 22.4,
+          "riskAssesmentProcess": {
+            "engine": "Bash",
+            "description": "Bash script",
+            "command": "sh script.sh"
+          },
+          "impact_i": false,
+          "impact": "middle",
+          "impact_c": false,
+          "impact_a": true
+        }
+      ],
+      "name": "Hydroelectric Power Plant Hacking Threat",
+      "description": "An attacker may intercept and hide the request to the dam control station (using for instance a man-in-the-middle attack to counterfeit and/or delete the request messages). As a result, the dam gates remain open and continue to feed the hydroelectric turbines with water, causing their failure",
+      "ident": "A5",
+      "related_Business_Process_Ident": "bcbcbc76-cccf-4a2c-bf55-a2f3a9cccccc"
+    },
+    {
+      "proactiveElementaryRisk": [
+        {
+          "likelihood": 44.5,
+          "riskAssesmentProcess": {
+            "engine": "Ruby",
+            "description": "Ruby script",
+            "command": "ruby command.rb"
+          },
+          "impact_i": true,
+          "impact": "medium",
+          "impact_c": false,
+          "attackPath_Ident": "bababa76-c1cf-4a2c-bf5c-a2f3a9cccccc",
+          "impact_a": true
+        }
+      ],
+      "automataBasedElementaryRisk": [
+        {
+          "ongoingAttackPlan_Ident": [
+            "3a3a3a76-c1cf-4a2c-bf5c-a2f3a9cccccc",
+            "5a5a5a76-c1cf-4a2c-bf5c-a2f3a9cccccc"
+          ],
+          "success_Likelyhood": [
+            63.3,
+            54.9,
+            90.1
+          ],
+          "riskAssesmentProcess": {
+            "engine": "Python",
+            "description": "Python script",
+            "command": "./script.py"
+          },
+          "impact_i": false,
+          "impact": "low",
+          "impact_c": true,
+          "impact_a": false
+        }
+      ],
+      "queryBasedReactiveElementaryRisk": [
+        {
+          "ongoingAttackPlan_Ident": "4a4a4a76-c1cf-4a2c-bf5c-a2f3a9cccccc",
+          "success_Likelyhood": 22.4,
+          "riskAssesmentProcess": {
+            "engine": "Bash",
+            "description": "Bash script",
+            "command": "sh script.sh"
+          },
+          "impact_i": false,
+          "impact": "middle",
+          "impact_c": false,
+          "impact_a": true
+        }
+      ],
+      "name": "Water Level Sensor Compromise Threat",
+      "description": "A machine succeds in controlling remotely an important asset in the Control Station central",
+      "ident": "A1",
+      "related_Business_Process_Ident": "bcbcbc76-cccf-4a2c-bf55-a2f3a9cccccc"
+    }
+  ],
+  "riskProfile_Ident": "ececec76-cccf-4a2c-bf55-a2f3a9cccccc",
+  "attackPathProgress": [
+    {
+      "mostAdvancedAttackPlan_Ident": "ececec76-cccf-4a2c-bf55-a2f3a9c1c1c1",
+      "lastCompromisedNode_Ident": "ececec76-cccf-4a2c-bf55-a2f3a92c2c2c",
+      "queryBasedOngoingAttack": {
+        "exploitedEdge": [
+          {
+            "occurrences": 123456789,
+            "normalizedAlert_Ident": [
+              "ececec76-cccf-4a2c-bf55-a2f3a92b2b2b",
+              "ececec76-cccf-4a2c-bf55-a2f3a92d2d2d"
+            ],
+            "exploitation_Time": [
+              "112050PAPR2016",
+              "212050PAPR2016"
+            ]
+          }
+        ],
+        "lastCompromizedNode_Ident": "ececec76-cccf-4a2c-bf55-a2f3a92c2c2c",
+        "ongoingAttack_Ident": "ececec76-c22f-4a2c-bf55-a2f3a92c2c2c"
+      },
+      "automataBasedOngoingAttackPlan": [
+        {
+          "ongoingAttackPlan_Id": "ececec76-c22f-411c-bf55-a2f3a92c2c2c",
+          "lastCompromizedNode_Ident": "ececec76-cccf-4a2c-bf55-a2f3a92c2c2c",
+          "exploitation_Time": "112050PAPR2016",
+          "normalizedAlert_Id": [
+            "ececec76-000f-4a2c-bf55-a2f3a92b2b2b"
+          ]
+        }
+      ],
+      "attackPath_Ident": "ececec76-cccf-4a2c-bf55-a2f3a9000000",
+      "attackPathProgress_Ident": "00000076-cccf-4a2c-bf55-a2f3a92b2b2b"
+    }
+  ],
+  "attackPath": [
+    {
+      "attackPathNodes": [
+        {
+          "ingress": {
+            "address": {
+              "address": "192.168.1.240",
+              "netmask": "255.255.255.0",
+              "vlan_num": 240,
+              "ident": "eaeaea77-5bbf-4a2c-0240-a2f3a9666666",
+              "category": "IPV4",
+              "vlan_name": "vlan240"
+            },
+            "interface_Ident": "eaeaea77-5bbf-4a2c-a240-a2f3a9666666"
+          },
+          "node_Ident": "eaeaea77-5bbf-4a2c-01de-a2f3a9666666",
+          "maxGainedPrivilege": "None",
+          "responsibleNodes": {
+            "node_Ident": [
+              {
+                "node": "NodeX",
+                "rank": 2
+              }
+            ]
+          },
+          "egress": {
+            "protocol": {
+              "name": "HTTP",
+              "version": "1.0"
+            },
+            "address": {
+              "address": "192.168.0.19",
+              "netmask": "255.255.255.0",
+              "vlan_num": 19,
+              "ident": "55555577-5678-1234-bfc6-a2f3a9123456",
+              "category": "IPV4",
+              "vlan_name": "vlan_IPV4"
+            },
+            "interface_Ident": "eeeeee77-1234-5678-bfc6-a2f3a9666666",
+            "portList": [
+              {
+                "portRange": [
+                  {
+                    "port": "5656",
+                    "ip_Protocol": "UDP"
+                  }
+                ]
+              }
+            ]
+          },
+          "attackPathNodeVulnerability": [
+            {
+              "protocol": {
+                "name": "HTTP",
+                "version": "2.0"
+              },
+              "exploited_Range": "network",
+              "portList": [
+                {
+                  "portRange": [
+                    {
+                      "port": "9999",
+                      "ip_Protocol": "TCP"
+                    }
+                  ]
+                }
+              ],
+              "classification": [
+                {
+                  "ident": "f1f1f177-5c2f-4abc-bfc6-a2f3a9888888",
+                  "text": "Classification2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "attackPath_Action": "newPath",
+      "attackPath_Ident": "f1f1f177-5c2f-4abc-bfc6-a2f3a9181818"
+    }
+  ],
+  "snapshot_Ident": "eaeaea76-cccf-4a2c-bf55-a2f3a9cccccc"
+}

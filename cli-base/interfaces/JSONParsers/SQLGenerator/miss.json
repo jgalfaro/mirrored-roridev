@@ -1,0 +1,183 @@
+{
+    "monitored_System_Ident": "Panoptesec-DAM",
+    "policy_enforcement_point": [
+        {
+            "id": "E1",
+            "name": "PEPs_2",
+            "type": "Wireless Sensor Networks",
+            "AEV": 1000
+        },
+        {
+            "id": "E2",
+            "name": "PEPs_4",
+            "type": "IDSs and IPSs",
+            "AEV": 2500
+        },
+        {
+            "id": "E3",
+            "name": "PEPs_5",
+            "type": "Firewalls",
+            "AEV": 2000
+        },
+        {
+            "id": "E4",
+            "name": "PEPs_7",
+            "type": "Access Control Mechanisms",
+            "AEV": 1500
+        },
+        {
+            "id": "E5",
+            "name": "PEPs_8",
+            "type": "System Behavior Monitors",
+            "AEV": 1200
+        },
+        {
+            "id": "E6",
+            "name": "PEPs_9",
+            "type": "Communication Protocols",
+            "AEV": 500
+        },
+        {
+            "id": "pppp",
+            "name": "PEPs_1",
+            "type": "Cryptosystems"
+        },
+        {
+            "id": "rrr",
+            "name": "PEPs_3",
+            "type": "Backup Power Suppliers"
+        },
+        {
+            "id": "sss",
+            "name": "PEPs_6",
+            "type": "Antivirus and Antimalware"
+        }
+    ],
+    "detrimental_event_mitigation_action": [
+        {
+            "detrimental_event_id": "A7",
+            "mitigation_actions_id": [
+                "C2",
+                "C1",
+                "C3",
+                "C5",
+                "C4"
+            ]
+        },
+        {
+            "detrimental_event_id": "A5",
+            "mitigation_actions_id": [
+                "C4",
+                "C9",
+                "C6",
+                "C7",
+                "C8"
+            ]
+        },
+        {
+            "detrimental_event_id": "A1",
+            "mitigation_actions_id": [
+                "C11",
+                "C12",
+                "C13",
+                "C14"
+            ]
+        }
+    ],
+    "mitigation_action_risk_mitigation": [
+        {
+            "mitigation_action": "C1",
+            "EF": 0.7,
+            "COV": 0.85,
+            "RM": 0.595
+        },
+        {
+            "mitigation_action": "C3",
+            "EF": 0.85,
+            "COV": 0.75,
+            "RM": 0.6375
+        },
+        {
+            "mitigation_action": "C5",
+            "EF": 0.7,
+            "COV": 0.55,
+            "RM": 0.385
+        },
+        {
+            "mitigation_action": "C4",
+            "EF": 0.9,
+            "COV": 0.7,
+            "RM": 0.63
+        },
+        {
+            "mitigation_action": "C9",
+            "EF": 0.75,
+            "COV": 0.4,
+            "RM": 0.3
+        },
+        {
+            "mitigation_action": "C6",
+            "EF": 0.7,
+            "COV": 0.75,
+            "RM": 0.525
+        },
+        {
+            "mitigation_action": "C7",
+            "EF": 0.85,
+            "COV": 0.75,
+            "RM": 0.6375
+        },
+        {
+            "mitigation_action": "C8",
+            "EF": 0.8,
+            "COV": 0.8,
+            "RM": 0.64
+        },
+        {
+            "mitigation_action": "C11",
+            "EF": 0,
+            "COV": 0,
+            "RM": 0.8
+        },
+        {
+            "mitigation_action": "C12",
+            "EF": 0,
+            "COV": 0,
+            "RM": 0.65
+        },
+        {
+            "mitigation_action": "C13",
+            "EF": 0,
+            "COV": 0,
+            "RM": 0.4
+        },
+        {
+            "mitigation_action": "C14",
+            "EF": 0,
+            "COV": 0,
+            "RM": 0.85
+        },
+        {
+            "mitigation_action": "C10",
+            "EF": 0.6,
+            "COV": 0.45,
+            "RM": 0.27
+        },
+        {
+            "mitigation_action": "C2",
+            "EF": 0.8,
+            "COV": 0.6,
+            "RM": 0.48
+        }
+    ],
+    "detrimental_event_ale": [
+        {
+            "detrimental_event_id": "A7",
+            "ale": 50000
+        },
+        {
+            "detrimental_event_id": "A5",
+            "ale": 50000
+        }
+    ]
+}

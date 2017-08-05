@@ -1,0 +1,607 @@
+{
+  "mitigationAction": [
+    {
+      "mitigationAction_Ident": "C2",
+      "orBacTemplates": {
+        "extractorProcess": {
+          "engine": "Bash",
+          "description": "Bash patch script",
+          "command": "sh patch.sh"
+        },
+        "scope": "Tactical",
+        "type": "OrBacRuleType"
+      },
+      "scope": "Strategic",
+      "annualResponseCost": {
+        "totalCost": 200.00
+      },
+      "name": "Privilege Separation",
+      "consequences": [
+        {
+          "negation": false,
+          "anticorrelator_Kind": "Panoptesec",
+          "parameter": [
+            {
+              "name": "Parameter",
+              "type": "Type1",
+              "value": "Value2"
+            },
+            {
+              "name": "Parameter1",
+              "type": "Type3",
+              "value": "Value1"
+            }
+          ],
+          "name": "Collapse"
+        }
+      ],
+      "description": "Enforce separation of privileges is useful by preventing users to perform actions they are not allowed",
+      "enforcementPoints": [
+        {
+          "ident": "E4"
+        }
+      ],
+      "type": "OnLikelihood"
+    },
+    {
+      "mitigationAction_Ident": "C10",
+      "orBacTemplates": {
+        "extractorProcess": {
+          "engine": "Bash",
+          "description": "Bash patch script",
+          "command": "sh patch.sh"
+        },
+        "scope": "Tactical",
+        "type": "OrBacRuleType"
+      },
+      "scope": "Strategic",
+      "annualResponseCost": {
+        "totalCost": 300.00
+      },
+      "name": "Active Alert Mode",
+      "consequences": [
+        {
+          "negation": false,
+          "anticorrelator_Kind": "Panoptesec",
+          "parameter": [
+            {
+              "name": "Parameter",
+              "type": "Type1",
+              "value": "Value2"
+            },
+            {
+              "name": "Parameter1",
+              "type": "Type3",
+              "value": "Value1"
+            }
+          ],
+          "name": "Collapse"
+        }
+      ],
+      "description": "This countermeasure fires an alert indicating that the control station is suspected to be under attack",
+      "enforcementPoints": [
+        {
+          "ident": "E2"
+        }
+      ],
+      "type": "OnLikelihood"
+    },
+    {
+      "mitigationAction_Ident": "C1",
+      "orBacTemplates": {
+        "extractorProcess": {
+          "engine": "Bash",
+          "description": "Bash patch script",
+          "command": "sh patch.sh"
+        },
+        "scope": "Tactical",
+        "type": "OrBacRuleType"
+      },
+      "scope": "Strategic",
+      "annualResponseCost": {
+        "totalCost": 500.00
+      },
+      "name": "Disable Remote Connections",
+      "consequences": [
+        {
+          "negation": false,
+          "anticorrelator_Kind": "Panoptesec",
+          "parameter": [
+            {
+              "name": "Parameter",
+              "type": "Type1",
+              "value": "Value2"
+            },
+            {
+              "name": "Parameter1",
+              "type": "Type3",
+              "value": "Value1"
+            }
+          ],
+          "name": "Collapse"
+        }
+      ],
+      "description": "Allow only local connections to the control station to authorized users (Switch from 'remote' to 'not-remote')",
+      "enforcementPoints": [
+        {
+          "ident": "E3"
+        }
+      ],
+      "type": "OnLikelihood"
+    },
+    {
+      "mitigationAction_Ident": "C3",
+      "orBacTemplates": {
+        "extractorProcess": {
+          "engine": "Bash",
+          "description": "Bash patch script",
+          "command": "sh patch.sh"
+        },
+        "scope": "Tactical",
+        "type": "OrBacRuleType"
+      },
+      "scope": "Strategic",
+      "annualResponseCost": {
+        "totalCost": 700.00
+      },
+      "name": "Enable Multiple Monitoring",
+      "consequences": [
+        {
+          "negation": false,
+          "anticorrelator_Kind": "Panoptesec",
+          "parameter": [
+            {
+              "name": "Parameter",
+              "type": "Type1",
+              "value": "Value2"
+            },
+            {
+              "name": "Parameter1",
+              "type": "Type3",
+              "value": "Value1"
+            }
+          ],
+          "name": "Collapse"
+        }
+      ],
+      "description": "This countermeasure activates two or more monitoring systems to verify the water level indication obtained by the sensors')",
+      "enforcementPoints": [
+        {
+          "ident": "E5"
+        }
+      ],
+      "type": "OnLikelihood"
+    },
+    {
+      "mitigationAction_Ident": "C5",
+      "orBacTemplates": {
+        "extractorProcess": {
+          "engine": "Bash",
+          "description": "Bash patch script",
+          "command": "sh patch.sh"
+        },
+        "scope": "Tactical",
+        "type": "OrBacRuleType"
+      },
+      "scope": "Strategic",
+      "annualResponseCost": {
+        "totalCost": 200.00
+      },
+      "name": "Restart Sensor Settings",
+      "consequences": [
+        {
+          "negation": false,
+          "anticorrelator_Kind": "Panoptesec",
+          "parameter": [
+            {
+              "name": "Parameter",
+              "type": "Type1",
+              "value": "Value2"
+            },
+            {
+              "name": "Parameter1",
+              "type": "Type3",
+              "value": "Value1"
+            }
+          ],
+          "name": "Collapse"
+        }
+      ],
+      "description": "It erases the current sensor values and request for new thresholds')",
+      "enforcementPoints": [
+        {
+          "ident": "E6"
+        }
+      ],
+      "type": "OnLikelihood"
+    },
+    {
+      "mitigationAction_Ident": "C4",
+      "orBacTemplates": {
+        "extractorProcess": {
+          "engine": "Bash",
+          "description": "Bash patch script",
+          "command": "sh patch.sh"
+        },
+        "scope": "Tactical",
+        "type": "OrBacRuleType"
+      },
+      "scope": "Strategic",
+      "annualResponseCost": {
+        "totalCost": 400.00
+      },
+      "name": "Activate Back-up Sensors",
+      "consequences": [
+        {
+          "negation": false,
+          "anticorrelator_Kind": "Panoptesec",
+          "parameter": [
+            {
+              "name": "Parameter",
+              "type": "Type1",
+              "value": "Value2"
+            },
+            {
+              "name": "Parameter1",
+              "type": "Type3",
+              "value": "Value1"
+            }
+          ],
+          "name": "Collapse"
+        }
+      ],
+      "description": "Switch 'off' current sensors and switch 'on' back-up sensors')",
+      "enforcementPoints": [
+        {
+          "ident": "E2"
+        }
+      ],
+      "type": "OnLikelihood"
+    },
+    {
+      "mitigationAction_Ident": "C9",
+      "orBacTemplates": {
+        "extractorProcess": {
+          "engine": "Bash",
+          "description": "Bash patch script",
+          "command": "sh patch.sh"
+        },
+        "scope": "Tactical",
+        "type": "OrBacRuleType"
+      },
+      "scope": "Strategic",
+      "annualResponseCost": {
+        "totalCost": 500.00
+      },
+      "name": "Received Signal Strength",
+      "consequences": [
+        {
+          "negation": false,
+          "anticorrelator_Kind": "Panoptesec",
+          "parameter": [
+            {
+              "name": "Parameter",
+              "type": "Type1",
+              "value": "Value2"
+            },
+            {
+              "name": "Parameter1",
+              "type": "Type3",
+              "value": "Value1"
+            }
+          ],
+          "name": "Collapse"
+        }
+      ],
+      "description": "Depending on the position of the attacker, this alternative can be useful to indicate an abnormal behaviour on the system",
+      "enforcementPoints": [
+        {
+          "ident": "E5"
+        }
+      ],
+      "type": "OnLikelihood"
+    },
+    {
+      "mitigationAction_Ident": "C6",
+      "orBacTemplates": {
+        "extractorProcess": {
+          "engine": "Bash",
+          "description": "Bash patch script",
+          "command": "sh patch.sh"
+        },
+        "scope": "Tactical",
+        "type": "OrBacRuleType"
+      },
+      "scope": "Strategic",
+      "annualResponseCost": {
+        "totalCost": 200.00
+      },
+      "name": "Sensor Tamper Resistance",
+      "consequences": [
+        {
+          "negation": false,
+          "anticorrelator_Kind": "Panoptesec",
+          "parameter": [
+            {
+              "name": "Parameter",
+              "type": "Type1",
+              "value": "Value2"
+            },
+            {
+              "name": "Parameter1",
+              "type": "Type3",
+              "value": "Value1"
+            }
+          ],
+          "name": "Collapse"
+        }
+      ],
+      "description": "Activate tamper resistance on each sensor improves effectiveness to prevent hydroelectric power plant hacking attacks",
+      "enforcementPoints": [
+        {
+          "ident": "E1"
+        }
+      ],
+      "type": "OnLikelihood"
+    },
+    {
+      "mitigationAction_Ident": "C7",
+      "orBacTemplates": {
+        "extractorProcess": {
+          "engine": "Bash",
+          "description": "Bash patch script",
+          "command": "sh patch.sh"
+        },
+        "scope": "Tactical",
+        "type": "OrBacRuleType"
+      },
+      "scope": "Strategic",
+      "annualResponseCost": {
+        "totalCost": 200.00
+      },
+      "name": "Activate Protocol Analysis",
+      "consequences": [
+        {
+          "negation": false,
+          "anticorrelator_Kind": "Panoptesec",
+          "parameter": [
+            {
+              "name": "Parameter",
+              "type": "Type1",
+              "value": "Value2"
+            },
+            {
+              "name": "Parameter1",
+              "type": "Type3",
+              "value": "Value1"
+            }
+          ],
+          "name": "Collapse"
+        }
+      ],
+      "description": "Analyse the packets that go in/out the network, verify if the parameters are correct according to specific protocol norms, and stop them if they are classified as suspicious",
+      "enforcementPoints": [
+        {
+          "ident": "E3"
+        }
+      ],
+      "type": "OnLikelihood"
+    },
+    {
+      "mitigationAction_Ident": "C8",
+      "orBacTemplates": {
+        "extractorProcess": {
+          "engine": "Bash",
+          "description": "Bash patch script",
+          "command": "sh patch.sh"
+        },
+        "scope": "Tactical",
+        "type": "OrBacRuleType"
+      },
+      "scope": "Strategic",
+      "annualResponseCost": {
+        "totalCost": 300.00
+      },
+      "name": "Activate Block-All options",
+      "consequences": [
+        {
+          "negation": false,
+          "anticorrelator_Kind": "Panoptesec",
+          "parameter": [
+            {
+              "name": "Parameter",
+              "type": "Type1",
+              "value": "Value2"
+            },
+            {
+              "name": "Parameter1",
+              "type": "Type3",
+              "value": "Value1"
+            }
+          ],
+          "name": "Collapse"
+        }
+      ],
+      "description": "Block all unknown requests if the application is closed",
+      "enforcementPoints": [
+        {
+          "ident": "E3"
+        }
+      ],
+      "type": "OnLikelihood"
+    },
+    {
+      "mitigationAction_Ident": "C11",
+      "orBacTemplates": {
+        "extractorProcess": {
+          "engine": "Bash",
+          "description": "Bash patch script",
+          "command": "sh patch.sh"
+        },
+        "scope": "Tactical",
+        "type": "OrBacRuleType"
+      },
+      "scope": "Strategic",
+      "annualResponseCost": {
+        "totalCost": 800.00
+      },
+      "name": "Sensor Tampering",
+      "consequences": [
+        {
+          "negation": false,
+          "anticorrelator_Kind": "Panoptesec",
+          "parameter": [
+            {
+              "name": "Parameter",
+              "type": "Type1",
+              "value": "Value2"
+            },
+            {
+              "name": "Parameter1",
+              "type": "Type3",
+              "value": "Value1"
+            }
+          ],
+          "name": "Collapse"
+        }
+      ],
+      "description": "",
+      "enforcementPoints": [
+        {
+          "ident": "E1"
+        }
+      ],
+      "type": "OnLikelihood"
+    },
+    {
+      "mitigationAction_Ident": "C12",
+      "orBacTemplates": {
+        "extractorProcess": {
+          "engine": "Bash",
+          "description": "Bash patch script",
+          "command": "sh patch.sh"
+        },
+        "scope": "Tactical",
+        "type": "OrBacRuleType"
+      },
+      "scope": "Strategic",
+      "annualResponseCost": {
+        "totalCost": 500.00
+      },
+      "name": "Disable Remote Connection",
+      "consequences": [
+        {
+          "negation": false,
+          "anticorrelator_Kind": "Panoptesec",
+          "parameter": [
+            {
+              "name": "Parameter",
+              "type": "Type1",
+              "value": "Value2"
+            },
+            {
+              "name": "Parameter1",
+              "type": "Type3",
+              "value": "Value1"
+            }
+          ],
+          "name": "Collapse"
+        }
+      ],
+      "description": "",
+      "enforcementPoints": [
+        {
+          "ident": "E3"
+        }
+      ],
+      "type": "OnLikelihood"
+    },
+    {
+      "mitigationAction_Ident": "C13",
+      "orBacTemplates": {
+        "extractorProcess": {
+          "engine": "Bash",
+          "description": "Bash patch script",
+          "command": "sh patch.sh"
+        },
+        "scope": "Tactical",
+        "type": "OrBacRuleType"
+      },
+      "scope": "Strategic",
+      "annualResponseCost": {
+        "totalCost": 400.00
+      },
+      "name": "Signal Strength",
+      "consequences": [
+        {
+          "negation": false,
+          "anticorrelator_Kind": "Panoptesec",
+          "parameter": [
+            {
+              "name": "Parameter",
+              "type": "Type1",
+              "value": "Value2"
+            },
+            {
+              "name": "Parameter1",
+              "type": "Type3",
+              "value": "Value1"
+            }
+          ],
+          "name": "Collapse"
+        }
+      ],
+      "description": "",
+      "enforcementPoints": [
+        {
+          "ident": "E5"
+        }
+      ],
+      "type": "OnLikelihood"
+    },
+    {
+      "mitigationAction_Ident": "C14",
+      "orBacTemplates": {
+        "extractorProcess": {
+          "engine": "Bash",
+          "description": "Bash patch script",
+          "command": "sh patch.sh"
+        },
+        "scope": "Tactical",
+        "type": "OrBacRuleType"
+      },
+      "scope": "Strategic",
+      "annualResponseCost": {
+        "totalCost": 700.00
+      },
+      "name": "Clear Sensor",
+      "consequences": [
+        {
+          "negation": false,
+          "anticorrelator_Kind": "Panoptesec",
+          "parameter": [
+            {
+              "name": "Parameter",
+              "type": "Type1",
+              "value": "Value2"
+            },
+            {
+              "name": "Parameter1",
+              "type": "Type3",
+              "value": "Value1"
+            }
+          ],
+          "name": "Collapse"
+        }
+      ],
+      "description": "",
+      "enforcementPoints": [
+        {
+          "ident": "E6"
+        }
+      ],
+      "type": "OnLikelihood"
+    }
+  ],
+  "monitored_System_Ident": "Panoptesec-DAM"
+}

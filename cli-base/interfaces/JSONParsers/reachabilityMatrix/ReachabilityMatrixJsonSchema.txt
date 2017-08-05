@@ -1,0 +1,368 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": false,
+    "type": "object",
+    "definitions": {
+        "VulnerabilityList": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "vulnerability_Ident": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "ExternalNode": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "node_Ident": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "location": {
+                     "$ref": "#/definitions/Location"
+                },
+                "initialAccessLevel": {
+                     "$ref": "#/definitions/Privilege"
+                },
+                "type": {
+                     "$ref": "#/definitions/NodeType"
+                },
+                "nodeInterface": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/Interface"
+                    }
+                }
+            }
+        },
+        "InternalNode": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "node_Ident": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "location": {
+                     "$ref": "#/definitions/Location"
+                },
+                "initialAccessLevel": {
+                     "$ref": "#/definitions/Privilege"
+                },
+                "type": {
+                     "$ref": "#/definitions/NodeType"
+                },
+                "nodeInterface": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/Interface"
+                    }
+                },
+                "vulnerabilityList": {
+                     "$ref": "#/definitions/VulnerabilityList"
+                }
+            }
+        },
+        "PortRangeList": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "portRange": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/PortRange"
+                    }
+                }
+            }
+        },
+        "Address": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "address": {
+                    "type": "string"
+                },
+                "netmask": {
+                    "type": "string"
+                },
+                "vlan_num": {
+                     "$ref": "#/definitions/int"
+                },
+                "ident": {
+                    "type": "string"
+                },
+                "category": {
+                     "$ref": "#/definitions/IPAddressType"
+                },
+                "vlan_name": {
+                    "type": "string"
+                }
+            }
+        },
+		"double": {
+            "maximum": 1.7976931348623157e+308,
+            "type": "number",
+            "minimum": 5e-324
+        },
+        "Position": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "x": {
+                    "$ref": "#/definitions/double"
+                },
+                "y": {
+                    "$ref": "#/definitions/double"
+                },
+                "z": {
+                    "$ref": "#/definitions/double"
+                },
+                "type": {
+                     "$ref": "#/definitions/CoordinateType"
+                }
+            },
+            "required": [
+                "x",
+                "z",
+                "y"
+            ]
+        },
+        "Node": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "node_Ident": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "location": {
+                     "$ref": "#/definitions/Location"
+                },
+                "type": {
+                     "$ref": "#/definitions/NodeType"
+                },
+                "initialAccessLevel": {
+                     "$ref": "#/definitions/Privilege"
+                },
+                "nodeInterface": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/Interface"
+                    }
+                }
+            }
+        },
+        "IPProtocol": {
+            "enum": [
+                "UDP",
+                "TCP",
+                "ICMP"
+            ]
+        },
+        "ResponsiblePath": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "protocolList": {
+                     "$ref": "#/definitions/ProtocolList"
+                },
+                "responsibleNodeList": {
+                     "$ref": "#/definitions/ResponsibleNodesList"
+                },
+                "portList": {
+                     "$ref": "#/definitions/PortRangeList"
+                }
+            }
+        },
+        "int": {
+            "maximum": 2147483647,
+            "type": "integer",
+            "minimum": -2147483648
+        },
+        "CoordinateType": {
+            "enum": [
+                "WGS84",
+                "Cartesian"
+            ]
+        },
+        "PortRange": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "port": {
+                    "type": "string"
+                },
+                "ip_Protocol": {
+                     "$ref": "#/definitions/IPProtocol"
+                }
+            }
+        },
+        "Node_Ident": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "node": {
+                    "type": "string"
+                },
+                "rank": {
+                     "$ref": "#/definitions/int"
+                }
+            }
+        },
+        "IPAddressType": {
+            "enum": [
+                "IPV4",
+                "IPV6",
+                "Unknown"
+            ]
+        },
+        "CommunicatingNode": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "address": {
+                     "$ref": "#/definitions/Address"
+                },
+                "responsiblePath": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/ResponsiblePath"
+                    }
+                },
+                "node_Ident": {
+                    "type": "string"
+                }
+            }
+        },
+        "ProtocolList": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "protocol": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/Protocol"
+                    }
+                }
+            }
+        },
+        "NodeType": {
+            "enum": [
+                "Terminal",
+                "Server",
+                "Router",
+                "Firewall",
+                "Switch",
+                "Unknown",
+                "Sensor",
+                "External"
+            ]
+        },
+        "ResponsibleNodesList": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "node_Ident": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/Node_Ident"
+                    }
+                }
+            }
+        },
+        "Privilege": {
+            "enum": [
+                "Root",
+                "User",
+                "None",
+                "Unknown"
+            ]
+        },
+        "Protocol": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                }
+            }
+        },
+        "Interface": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "communicatingNode": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/CommunicatingNode"
+                    }
+                },
+                "address": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/Address"
+                    }
+                },
+                "name": {
+                    "type": "string"
+                },
+                "interface_Ident": {
+                    "type": "string"
+                },
+                "network_Ident": {
+                    "type": "string"
+                }
+            }
+        },
+        "Location": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "position": {
+                     "$ref": "#/definitions/Position"
+                }
+            }
+        }
+    },
+    "properties": {
+        "monitored_System_Ident": {
+            "type": "string"
+        },
+        "node": {
+            "type": "array",
+            "items": {
+                "anyOf": [
+                    {
+                         "$ref": "#/definitions/ExternalNode"
+                    },
+                    {
+                         "$ref": "#/definitions/InternalNode"
+                    }
+                ]
+            }
+        },
+        "reachabilityMatrix_Ident": {
+            "type": "string"
+        },
+        "snapshot_Ident": {
+            "type": "string"
+        }
+    }
+}

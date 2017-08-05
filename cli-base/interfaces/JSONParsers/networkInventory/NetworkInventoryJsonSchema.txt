@@ -1,0 +1,550 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": false,
+	"title": "NetworkInventory",
+    "type": "object",
+    "definitions": {
+	    "double": {
+            "maximum": 1.7976931348623157e+308,
+            "type": "number",
+            "minimum": -5e-324
+        },
+        "OperatingSystem": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "patches": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/Patch"
+                    }
+                },
+                "application": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/Application"
+                    }
+                },
+                "driver": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/Driver"
+                    }
+                },
+                "osClass": {
+                     "$ref": "#/definitions/OSClass"
+                },
+                "user": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/User"
+                    }
+                }
+            }
+        },
+        "MediaInterface": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "macAddress": {
+                     "$ref": "#/definitions/MacAddress"
+                },
+                "vlan_Ident": {
+                    "type": "string"
+                },
+                "link_encap": {
+                    "type": "string"
+                }
+            }
+        },
+        "User": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "role": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+				"fullName": {
+                    "type": "string"
+                },
+                "group": {
+                    "type": "string"
+                }
+            }
+        },
+        "IPInterface": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "dnsSuffix": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "ipAddresses": {
+                    "type": "array",
+                    "items": {
+                        "anyOf": [
+                            {
+                                 "$ref": "#/definitions/IpV4Address"
+                            },
+                            {
+                                 "$ref": "#/definitions/IpV6Address"
+                            }
+                        ]
+                    },
+                    "minItems": 1,
+                    "maxItems": 2,
+                    "uniqueItems": true
+                },
+                "defaultGatewayAddress": {
+                    "type": "string"
+                }
+            }
+        },
+        "Driver": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "date": {
+                    "type": "string"
+                },
+                "provider": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                }
+            }
+        },
+        "NetworkNode": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "networkInterfaces": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/NetworkInterface"
+                    }
+                },
+                "location": {
+                     "$ref": "#/definitions/Location"
+                },
+                "hostName": {
+                    "type": "string"
+                },
+                "node_Ident": {
+                    "type": "string"
+                },
+                "routingTable": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/Route"
+                    }
+                },
+                "type": {
+                     "$ref": "#/definitions/NodeType"
+                },
+                "firmware": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/Firmware"
+                    }
+                },
+                "operatingSystem": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/OperatingSystem"
+                    }
+                },
+                "vulnerabilityList": {
+                     "$ref": "#/definitions/VulnerabilityList"
+                }
+            }
+        },
+        "CoordinateType": {
+            "enum": [
+                "WGS84",
+                "Cartesian"
+            ]
+        },
+        "IPAddressType": {
+            "enum": [
+                "IPV4",
+                "IPV6",
+                "Unknown"
+            ]
+        },
+        "IPPort": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "number": {
+                     "$ref": "#/definitions/int"
+                },
+                "service": {
+                     "$ref": "#/definitions/Service"
+                },
+                "transportProtocol": {
+                     "$ref": "#/definitions/IPProtocol"
+                },
+				"description": {
+                    "type": "string"
+                },
+				"ipPortId": {
+                    "type": "string"
+                },
+                "state": {
+                     "$ref": "#/definitions/PortState"
+                }
+            }
+        },
+        "Firmware": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                }
+            }
+        },
+        "Route": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "iface": {
+                     "$ref": "#/definitions/NetworkInterface"
+                },
+                "ref": {
+                     "$ref": "#/definitions/int"
+                },
+                "metric": {
+                     "$ref": "#/definitions/int"
+                },
+                "use": {
+                     "$ref": "#/definitions/int"
+                },
+                "destination": {
+                    "type": "string"
+                },
+                "flags": {
+                    "type": "string"
+                },
+                "gateway": {
+                    "type": "string"
+                },
+                "mask": {
+                    "type": "string"
+                }
+            }
+        },
+        "OSClass": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "generation": {
+                    "type": "string"
+                },
+                "vendor": {
+                    "type": "string"
+                },
+                "family": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                }
+            }
+        },
+        "Position": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "x": {
+                     "$ref": "#/definitions/double"
+                },
+                "y": {
+                     "$ref": "#/definitions/double"
+                },
+                "z": {
+                     "$ref": "#/definitions/double"
+                },
+                "type": {
+                     "$ref": "#/definitions/CoordinateType"
+                }
+            },
+            "required": [
+                "y",
+                "x"
+            ]
+        },
+        "IPProtocol": {
+            "enum": [
+                "UDP",
+                "TCP",
+                "ICMP"
+            ]
+        },
+        "NetworkInterface": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "mediaInterface": {
+                     "$ref": "#/definitions/MediaInterface"
+                },
+                "iPInterface": {
+                     "$ref": "#/definitions/IPInterface"
+                }
+            }
+        },
+        "Service": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "namePID": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "runningState": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "type": {
+                     "$ref": "#/definitions/ServiceProtocol"
+                },
+				"ipPortId": {
+                    "type": "string"
+                },
+                "user": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/User"
+                    }
+                }
+            }
+        },
+        "MacAddress": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "macAddress": {
+                    "type": "string"
+                },
+                "vendor": {
+                    "type": "string"
+                }
+            }
+        },
+        "int": {
+            "maximum": 2147483647,
+            "type": "integer",
+            "minimum": -2147483648
+        },
+        "VulnerabilityList": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "vulnerability_Ident": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "PortState": {
+            "enum": [
+                "open",
+                "closed"
+            ]
+        },
+        "NodeType": {
+            "enum": [
+                "Terminal",
+                "Server",
+                "Router",
+                "Firewall",
+                "Switch",
+                "Unknown",
+                "Sensor",
+                "External"
+            ]
+        },
+        "IpAddress": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "address": {
+                    "type": "string"
+                },
+                "iPPorts": {
+                     "$ref": "#/definitions/IPPort"
+                },
+                "version": {
+                     "$ref": "#/definitions/IPAddressType"
+                }
+            }
+        },
+        "IpV6Address": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "address": {
+                    "type": "string"
+                },
+				 "iPPorts": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/IPPort"
+                    }
+                },
+                "version": {
+                     "$ref": "#/definitions/IPAddressType"
+                }
+            }
+        },
+        "IpV4Address": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "address": {
+                    "type": "string"
+                },
+                 "iPPorts": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/IPPort"
+                    }
+                },
+                "version": {
+                     "$ref": "#/definitions/IPAddressType"
+                },
+                "subnet_mask": {
+                    "type": "string"
+                }
+            }
+        },
+        "ServiceProtocol": {
+            "enum": [
+                "SCADA",
+                "SSH",
+                "Other"
+            ]
+        },
+        "Patch": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "severity": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string"
+                },
+                "date": {
+                    "type": "string"
+                },
+				"reference": {
+                    "type": "string"
+                },
+				"fileUrl": {
+                    "type": "string"
+                },
+				"fileName": {
+                    "type": "string"
+                },
+				"installParameter": {
+                    "type": "string"
+                },
+				"installed": {
+                    "type": "string"
+                },
+				"isDeployable": {
+                    "type": "string"
+                },
+				"fileDigest": {
+                    "type": "string"
+                },
+				"isUninstallable": {
+                    "type": "string"
+                },
+				"uninstallCommand": {
+                    "type": "string"
+                }
+            }
+        },
+        "Application": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "namePID": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "user": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/User"
+                    }
+                },
+				"patches": {
+                    "type": "array",
+                    "items": {
+                         "$ref": "#/definitions/Patch"
+                    }
+                }
+            }
+        },
+        "Location": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "position": {
+                     "$ref": "#/definitions/Position"
+                }
+            }
+        }
+    },
+    "properties": {
+        "monitored_System_Ident": {
+            "type": "string"
+        },
+		"deployedAccessControlPolicyId": {
+            "type": "string"
+        },
+        "networkInventory_Ident": {
+            "type": "string"
+        },
+        "devices": {
+            "type": "array",
+            "items": {
+                 "$ref": "#/definitions/NetworkNode"
+            }
+        },
+        "snapshot_Ident": {
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "mitigationActions": [
+        {
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 435.16,
+                    "enforcementPoint": "E2",
+                    "mitigationActionID": "C4"
+                }
+            ]
+        }
+    ],
+    "responsePlanID": "RORI_RP_2015-07-21_11-15-29-573903"
+}

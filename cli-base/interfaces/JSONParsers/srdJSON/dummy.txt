@@ -1,0 +1,74 @@
+{
+    "RORI_MA": [
+        {
+            "id": "C2",
+            "name": "Privilege Separation",
+            "description": "Enforce separation of privileges is useful by preventing users to perform actions they are not allowed"
+        },
+        {
+            "id": "C10",
+            "name": "Active Alert Mode",
+            "description": "This countermeasure fires an alert indicating that the control station is suspected to be under attack"
+        },
+        {
+            "id": "C1",
+            "name": "Disable Remote Connections",
+            "description": "Allow only local connections to the control station to authorized users (Switch from 'remote' to 'not-remote')"
+        },
+        {
+            "id": "C3",
+            "name": "Enable Multiple Monitoring",
+            "description": "This countermeasure activates two or more monitoring systems to verify the water level indication obtained by the sensors"
+        },
+        {
+            "id": "C5",
+            "name": "Restart Sensor Settings",
+            "description": "It erases the current sensor values and request for new thresholds"
+        },
+        {
+            "id": "C4",
+            "name": "Activate Back-up Sensors",
+            "description": "Switch 'off' current sensors and switch 'on' back-up sensors"
+        },
+        {
+            "id": "C9",
+            "name": "Received Signal Strength",
+            "description": "Depending on the position of the attacker, this alternative can be useful to indicate an abnormal behaviour on the system"
+        },
+        {
+            "id": "C6",
+            "name": "Sensor Tamper Resistance",
+            "description": "Activate tamper resistance on each sensor improves effectiveness to prevent hydroelectric power plant hacking attacks"
+        },
+        {
+            "id": "C7",
+            "name": "Activate Protocol Analysis",
+            "description": "Analyse the packets that go in/out the network, verify if the parameters are correct according to specific protocol norms, and stop them if they are classified as suspicious"
+        },
+        {
+            "id": "C8",
+            "name": "Activate Block-All options",
+            "description": "Block all unknown requests if the application is closed"
+        },
+        {
+            "id": "C11",
+            "name": "Sensor Tampering",
+            "description": ""
+        },
+        {
+            "id": "C12",
+            "name": "Disable Remote Connection",
+            "description": ""
+        },
+        {
+            "id": "C13",
+            "name": "Signal Strength",
+            "description": ""
+        },
+        {
+            "id": "C14",
+            "name": "Clear Sensor",
+            "description": ""
+        }
+    ]
+}

@@ -1,0 +1,539 @@
+{
+    "mitigationActions": [
+        {
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 420.0,
+                    "enforcementPoint": "E5",
+                    "mitigationActionID": "C3"
+                },
+                {
+                    "RORI_Index": 435.16,
+                    "enforcementPoint": "E2",
+                    "mitigationActionID": "C4"
+                },
+                {
+                    "RORI_Index": 362.92,
+                    "enforcementPoint": "E6",
+                    "mitigationActionID": "C5"
+                },
+                {
+                    "RORI_Index": 291.3,
+                    "enforcementPoint": "E3",
+                    "mitigationActionID": "C1"
+                },
+                {
+                    "RORI_Index": 418.93,
+                    "enforcementPoint": "E4",
+                    "mitigationActionID": "C2"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 503.08,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 435.16,
+                    "enforcementPoint": "E2",
+                    "mitigationActionID": "C4"
+                },
+                {
+                    "RORI_Index": 362.92,
+                    "enforcementPoint": "E6",
+                    "mitigationActionID": "C5"
+                },
+                {
+                    "RORI_Index": 418.93,
+                    "enforcementPoint": "E4",
+                    "mitigationActionID": "C2"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 497.69,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 435.16,
+                    "enforcementPoint": "E2",
+                    "mitigationActionID": "C4"
+                },
+                {
+                    "RORI_Index": 418.93,
+                    "enforcementPoint": "E4",
+                    "mitigationActionID": "C2"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 493.55,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 435.16,
+                    "enforcementPoint": "E2",
+                    "mitigationActionID": "C4"
+                },
+                {
+                    "RORI_Index": 362.92,
+                    "enforcementPoint": "E6",
+                    "mitigationActionID": "C5"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 477.94,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 362.92,
+                    "enforcementPoint": "E6",
+                    "mitigationActionID": "C5"
+                },
+                {
+                    "RORI_Index": 418.93,
+                    "enforcementPoint": "E4",
+                    "mitigationActionID": "C2"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 475.4,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 420.0,
+                    "enforcementPoint": "E5",
+                    "mitigationActionID": "C3"
+                },
+                {
+                    "RORI_Index": 435.16,
+                    "enforcementPoint": "E2",
+                    "mitigationActionID": "C4"
+                },
+                {
+                    "RORI_Index": 362.92,
+                    "enforcementPoint": "E6",
+                    "mitigationActionID": "C5"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 472.93,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 435.16,
+                    "enforcementPoint": "E2",
+                    "mitigationActionID": "C4"
+                },
+                {
+                    "RORI_Index": 362.92,
+                    "enforcementPoint": "E6",
+                    "mitigationActionID": "C5"
+                },
+                {
+                    "RORI_Index": 291.3,
+                    "enforcementPoint": "E3",
+                    "mitigationActionID": "C1"
+                },
+                {
+                    "RORI_Index": 418.93,
+                    "enforcementPoint": "E4",
+                    "mitigationActionID": "C2"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 472.24,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 420.0,
+                    "enforcementPoint": "E5",
+                    "mitigationActionID": "C3"
+                },
+                {
+                    "RORI_Index": 435.16,
+                    "enforcementPoint": "E2",
+                    "mitigationActionID": "C4"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 470.49,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 362.92,
+                    "enforcementPoint": "E6",
+                    "mitigationActionID": "C5"
+                },
+                {
+                    "RORI_Index": 291.3,
+                    "enforcementPoint": "E3",
+                    "mitigationActionID": "C1"
+                },
+                {
+                    "RORI_Index": 418.93,
+                    "enforcementPoint": "E4",
+                    "mitigationActionID": "C2"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 468.9,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 420.0,
+                    "enforcementPoint": "E5",
+                    "mitigationActionID": "C3"
+                },
+                {
+                    "RORI_Index": 435.16,
+                    "enforcementPoint": "E2",
+                    "mitigationActionID": "C4"
+                },
+                {
+                    "RORI_Index": 418.93,
+                    "enforcementPoint": "E4",
+                    "mitigationActionID": "C2"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 467.19,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 435.16,
+                    "enforcementPoint": "E2",
+                    "mitigationActionID": "C4"
+                },
+                {
+                    "RORI_Index": 291.3,
+                    "enforcementPoint": "E3",
+                    "mitigationActionID": "C1"
+                },
+                {
+                    "RORI_Index": 418.93,
+                    "enforcementPoint": "E4",
+                    "mitigationActionID": "C2"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 464.12,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 420.0,
+                    "enforcementPoint": "E5",
+                    "mitigationActionID": "C3"
+                },
+                {
+                    "RORI_Index": 435.16,
+                    "enforcementPoint": "E2",
+                    "mitigationActionID": "C4"
+                },
+                {
+                    "RORI_Index": 362.92,
+                    "enforcementPoint": "E6",
+                    "mitigationActionID": "C5"
+                },
+                {
+                    "RORI_Index": 418.93,
+                    "enforcementPoint": "E4",
+                    "mitigationActionID": "C2"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 463.27,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 435.16,
+                    "enforcementPoint": "E2",
+                    "mitigationActionID": "C4"
+                },
+                {
+                    "RORI_Index": 362.92,
+                    "enforcementPoint": "E6",
+                    "mitigationActionID": "C5"
+                },
+                {
+                    "RORI_Index": 291.3,
+                    "enforcementPoint": "E3",
+                    "mitigationActionID": "C1"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 461.88,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 420.0,
+                    "enforcementPoint": "E5",
+                    "mitigationActionID": "C3"
+                },
+                {
+                    "RORI_Index": 362.92,
+                    "enforcementPoint": "E6",
+                    "mitigationActionID": "C5"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 455.1,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 420.0,
+                    "enforcementPoint": "E5",
+                    "mitigationActionID": "C3"
+                },
+                {
+                    "RORI_Index": 418.93,
+                    "enforcementPoint": "E4",
+                    "mitigationActionID": "C2"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 451.97,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 291.3,
+                    "enforcementPoint": "E3",
+                    "mitigationActionID": "C1"
+                },
+                {
+                    "RORI_Index": 418.93,
+                    "enforcementPoint": "E4",
+                    "mitigationActionID": "C2"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 450.41,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 420.0,
+                    "enforcementPoint": "E5",
+                    "mitigationActionID": "C3"
+                },
+                {
+                    "RORI_Index": 362.92,
+                    "enforcementPoint": "E6",
+                    "mitigationActionID": "C5"
+                },
+                {
+                    "RORI_Index": 418.93,
+                    "enforcementPoint": "E4",
+                    "mitigationActionID": "C2"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 448.0,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 420.0,
+                    "enforcementPoint": "E5",
+                    "mitigationActionID": "C3"
+                },
+                {
+                    "RORI_Index": 435.16,
+                    "enforcementPoint": "E2",
+                    "mitigationActionID": "C4"
+                },
+                {
+                    "RORI_Index": 362.92,
+                    "enforcementPoint": "E6",
+                    "mitigationActionID": "C5"
+                },
+                {
+                    "RORI_Index": 291.3,
+                    "enforcementPoint": "E3",
+                    "mitigationActionID": "C1"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 447.43,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 420.0,
+                    "enforcementPoint": "E5",
+                    "mitigationActionID": "C3"
+                },
+                {
+                    "RORI_Index": 362.92,
+                    "enforcementPoint": "E6",
+                    "mitigationActionID": "C5"
+                },
+                {
+                    "RORI_Index": 291.3,
+                    "enforcementPoint": "E3",
+                    "mitigationActionID": "C1"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 444.47,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 420.0,
+                    "enforcementPoint": "E5",
+                    "mitigationActionID": "C3"
+                },
+                {
+                    "RORI_Index": 435.16,
+                    "enforcementPoint": "E2",
+                    "mitigationActionID": "C4"
+                },
+                {
+                    "RORI_Index": 291.3,
+                    "enforcementPoint": "E3",
+                    "mitigationActionID": "C1"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 441.81,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 420.0,
+                    "enforcementPoint": "E5",
+                    "mitigationActionID": "C3"
+                },
+                {
+                    "RORI_Index": 435.16,
+                    "enforcementPoint": "E2",
+                    "mitigationActionID": "C4"
+                },
+                {
+                    "RORI_Index": 291.3,
+                    "enforcementPoint": "E3",
+                    "mitigationActionID": "C1"
+                },
+                {
+                    "RORI_Index": 418.93,
+                    "enforcementPoint": "E4",
+                    "mitigationActionID": "C2"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 440.99,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 420.0,
+                    "enforcementPoint": "E5",
+                    "mitigationActionID": "C3"
+                },
+                {
+                    "RORI_Index": 291.3,
+                    "enforcementPoint": "E3",
+                    "mitigationActionID": "C1"
+                },
+                {
+                    "RORI_Index": 418.93,
+                    "enforcementPoint": "E4",
+                    "mitigationActionID": "C2"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 437.76,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 420.0,
+                    "enforcementPoint": "E5",
+                    "mitigationActionID": "C3"
+                },
+                {
+                    "RORI_Index": 435.16,
+                    "enforcementPoint": "E2",
+                    "mitigationActionID": "C4"
+                },
+                {
+                    "RORI_Index": 362.92,
+                    "enforcementPoint": "E6",
+                    "mitigationActionID": "C5"
+                },
+                {
+                    "RORI_Index": 291.3,
+                    "enforcementPoint": "E3",
+                    "mitigationActionID": "C1"
+                },
+                {
+                    "RORI_Index": 418.93,
+                    "enforcementPoint": "E4",
+                    "mitigationActionID": "C2"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 436.8,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 420.0,
+                    "enforcementPoint": "E5",
+                    "mitigationActionID": "C3"
+                },
+                {
+                    "RORI_Index": 362.92,
+                    "enforcementPoint": "E6",
+                    "mitigationActionID": "C5"
+                },
+                {
+                    "RORI_Index": 291.3,
+                    "enforcementPoint": "E3",
+                    "mitigationActionID": "C1"
+                },
+                {
+                    "RORI_Index": 418.93,
+                    "enforcementPoint": "E4",
+                    "mitigationActionID": "C2"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 435.64,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 362.92,
+                    "enforcementPoint": "E6",
+                    "mitigationActionID": "C5"
+                },
+                {
+                    "RORI_Index": 291.3,
+                    "enforcementPoint": "E3",
+                    "mitigationActionID": "C1"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 434.65,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 420.0,
+                    "enforcementPoint": "E5",
+                    "mitigationActionID": "C3"
+                },
+                {
+                    "RORI_Index": 291.3,
+                    "enforcementPoint": "E3",
+                    "mitigationActionID": "C1"
+                }
+            ]
+        },
+        {
+            "RORI_Combined": 407.29,
+            "individualEvaluation": [
+                {
+                    "RORI_Index": 435.16,
+                    "enforcementPoint": "E2",
+                    "mitigationActionID": "C4"
+                },
+                {
+                    "RORI_Index": 291.3,
+                    "enforcementPoint": "E3",
+                    "mitigationActionID": "C1"
+                }
+            ]
+        }
+    ],
+    "responsePlanID": "RORI_RP_2015-07-21_11-19-03-025698"
+}
